@@ -1,33 +1,40 @@
 # Codex OpenSchool
 
-这里会持续分享我自己在使用 Codex、AI Agent 和自动化工具过程中的一些实践内容，主要分成三类：自用 Skills、学习笔记和好用提示词。
+这里会持续分享我在使用 Codex、AI Agent、自动化工具和内容生产工作流时沉淀下来的公开材料。第一期先做一个完整入口，分成三块：
 
-## Skills 分享
+- Skills 分享：20 个高质量 skills、工具或 skill 生态项目。
+- 学习笔记：20 个可公开整理的学习主题。
+- 提示词模板：20 个适合教学、编程、研究、PPT、视频和复盘的模板。
 
-第一期先整理一批适合教学和复用的 skills，不直接上传本地源码，只做用途、来源和风险说明：
+所有内容都按“可公开、可复用、可注明来源”的标准整理。本仓库不会上传本地私有 skill 源码、真实聊天记录、账号后台、客户材料、密钥、个人路径或未脱敏截图。
 
-- [第一期开源 Skills 推荐清单](skills/README.md)
+## 第一期开源内容
 
-已覆盖方向：自动化浏览、AI 资讯、文档处理、PPT、UI/前端评测、视频内容生产和学术写作。
+| 方向 | 数量 | 入口 | 说明 |
+|---|---:|---|---|
+| Skills 分享 | 20 | [skills/README.md](skills/README.md) | 覆盖 skill 标准、浏览器自动化、Agent 框架、AI 资讯、文档/PPT、视频和技术动画 |
+| 学习笔记 | 20 | [notes/README.md](notes/README.md) | 从本地笔记中筛选可公开主题，只发布脱敏后的主题、摘要和整理方向 |
+| 提示词模板 | 20 | [prompts/prompt-templates-20.md](prompts/prompt-templates-20.md) | 模板为原创改写结构，附来源启发，不复制第三方长文本 |
 
-## 学习笔记
+## 已展开笔记
 
-这里会沉淀一些学习和调研笔记，主题主要围绕 AI Agent、自动化、编程工具、产品实践和效率工作流。
+- [Agent 自动化浏览与软件操作技术路线](notes/agent-automation-browser.md)
+- [Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)
+- [第一期 20 个学习笔记主题目录](notes/learning-notes-20.md)
 
-| 日期 | 标题 | 主题 |
-|---|---|---|
-| 2026-06-06 | [OpenClaw / Hermes 类 Agent 操作软件任务的技术方案调研报告](notes/agent-automation-browser.md) | Web Agent、CDP、DOM、UIA、RPA、Computer Use |
-| 2026-06-10 | [Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md) | Agent 工程化、测试、回放、审计、上线门禁 |
+## 已展开提示词
 
-## 提示词分享
-
-第一期先放两类可复用提示词：
-
-- [提示词清单](prompts/README.md)
+- [第一期 20 个提示词模板](prompts/prompt-templates-20.md)
 - [Codex 自我进化提示词](prompts/codex-self-evolution.md)
 - [AI 教程视觉提示词方法：参考宝玉 skills](prompts/visual-prompts-baoyu-skills.md)
 
-提示词会尽量附上使用场景和可替换变量，避免只是一段孤立文本。涉及个人记录、账号后台、客户材料、本机配置的内容不会原样公开。
+## 收录原则
+
+1. 优先选择已经实际使用过、能解释清楚价值的内容。
+2. 外部项目只做推荐、链接和使用建议，不复制源码或长篇原文。
+3. 本地内容只发布脱敏后的摘要、方法和模板。
+4. 涉及自动化浏览、账号登录、文件操作、发布内容等高风险场景时，必须注明边界和审核点。
+5. 作者或来源可确认时尽量标注；无法确认时明确写“本地整理”或“来源未见明确作者字段”。
 
 ## 目录结构
 
@@ -37,12 +44,13 @@
 ├── skills/
 │   └── README.md
 ├── notes/
+│   ├── README.md
 │   ├── agent-automation-browser.md
-│   └── enterprise-agent-harness.md
+│   ├── enterprise-agent-harness.md
+│   └── learning-notes-20.md
 └── prompts/
     ├── README.md
     ├── codex-self-evolution.md
+    ├── prompt-templates-20.md
     └── visual-prompts-baoyu-skills.md
 ```
-
-后续新增内容会按 `skills/`、`notes/`、`prompts/` 三个方向继续整理。
