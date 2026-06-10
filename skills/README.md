@@ -1,46 +1,59 @@
-# 第一期开源 Skills 推荐清单
+# 第一期开源 Skills 推荐清单（审计版）
 
-这份清单不是上传本机 skills 源码，而是整理 20 个值得学习、安装、借鉴或二次封装的 skills、工具和 skill 生态项目。筛选标准是：有明确用途、有公开来源或本地验证价值、适合教学复用，并且能说明风险边界。
+上一版把标准、框架、工具底座和具体 skills 混在一起，定义太宽。这一版重新收窄口径：只有满足下面条件的内容才进入主清单。
 
-## 20 个推荐项
+## 收录标准
 
-| # | 分类 | 名称 | 做什么 | 作者 / 来源 | 来源状态 | 公开建议 |
+一个条目必须同时满足：
+
+1. 有明确的 `SKILL.md`、skill 目录，或已经以 agent skill 方式分发。
+2. 能被 Agent 在实际任务里复用，不只是一个概念、标准、框架或普通库。
+3. 能说清楚触发场景、输入、输出和风险边界。
+4. 来源可以追溯；作者不明确时必须标注“本地整理”。
+5. 不依赖真实账号、聊天记录、客户材料、密钥或本机私有路径才能讲清价值。
+
+因此，Agent Skills Spec、OpenAI 文档、OpenClaw、Hermes Agent、Agents SDK、Manim、Marp、Remotion 这类内容不再放进 Skills 主清单。它们可以作为学习资料或工具底座，但不是这一页要推荐的 skill。
+
+## 审计后主推清单
+
+| # | Skill | 分类 | 做什么 | 作者 / 来源 | 为什么保留 | 风险与边界 |
 |---:|---|---|---|---|---|---|
-| 1 | Skill 标准 | [Agent Skills Spec](https://github.com/agentskills/agentskills) | 定义 agent skill 的目录、元数据、脚本、资源和渐进加载方式 | agentskills | 公开仓库，Apache-2.0 | 作为写 skill 的规范底座，不直接改写标准文档 |
-| 2 | Skill 标准 | [OpenAI Codex Agent Skills](https://developers.openai.com/codex/skills) | 说明 Codex 中 skill 的作用、结构、插件关系和加载机制 | OpenAI | 官方文档 | 作为 Codex OpenSchool 的 skill 解释入口 |
-| 3 | Skill 样例 | [Anthropic Skills](https://github.com/anthropics/skills) | 提供 Claude skills 的官方样例和文档、表格、演示等技能方向 | Anthropic | 公开仓库，部分内容为 source-available | 只链接和学习结构，注意不同子目录许可差异 |
-| 4 | 自动化浏览 | [web-access](https://github.com/eze-is/web-access) | 统一处理联网搜索、网页抓取、登录态网页和动态页面自动化 | 一泽Eze | 外部公开项目，本地已安装验证 | 适合重点推荐；登录态页面必须先确认账号安全和网站规则 |
-| 5 | 自动化浏览 | [Playwright](https://github.com/microsoft/playwright) | 用真实浏览器做测试、截图、表单、导航和页面状态验证 | Microsoft | 公开项目，Apache-2.0 | 适合作为浏览器自动化的底层工具 |
-| 6 | 自动化浏览 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | 把 Playwright 能力暴露给 LLM 或 Agent 使用 | Microsoft | 公开项目，Apache-2.0 | 适合讲 MCP 化浏览器工具；不要暴露敏感页面 |
-| 7 | 浏览器 Agent | [browser-use](https://github.com/browser-use/browser-use) | 让 AI agent 通过浏览器执行网站任务 | Browser Use | 公开项目，MIT | 适合和 Playwright 对比：更 agent 化，但风险也更高 |
-| 8 | 浏览器 Agent | [Stagehand](https://github.com/browserbase/stagehand) | 用代码和自然语言混合方式做可维护的浏览器自动化 | Browserbase | 公开项目，MIT | 适合讲“稳定选择器 + 必要 AI 判断”的生产思路 |
-| 9 | Agent 桌面 | [OpenClaw](https://github.com/openclaw/openclaw) | 面向个人工作流的 AI assistant，强调工具、workspace 和 skills | OpenClaw | 公开仓库 | 适合和本地自动化浏览笔记配套解读；不要搬部署配置 |
-| 10 | Agent 桌面 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 自进化 Agent，包含工具、浏览器、记忆和 skill 方向 | NousResearch | 公开仓库，MIT | 适合讲 Agent 自改进和浏览器后端，部署风险需单独说明 |
-| 11 | Agent 框架 | [OpenAI Agents SDK Python](https://github.com/openai/openai-agents-python) | 构建 tools、handoff、guardrails、多 Agent 工作流 | OpenAI | 公开仓库，MIT | 适合把 skill 扩展成可编排 agent workflow |
-| 12 | Agent 框架 | [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | 面向生产的多 Agent、工作流、观测和 human-in-the-loop | Microsoft | 公开仓库，MIT | 适合企业 Agent 工程化学习，避免一开始过度架构化 |
-| 13 | AI 资讯 | `aihot` | 查询 AI HOT 中文 AI 资讯、日报、精选条目和近期动态 | 来源站点：[AI HOT](https://aihot.virxact.com)；本地 skill 未见明确作者字段 | 本地 skill，依赖公开资讯站点 | 适合做 AI 日报和选题输入；引用时保留来源 |
-| 14 | 视觉/效率 | [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 宝玉整理的 AI Agent 日常效率、图片、Markdown/HTML 等 skills | JimLiu / 宝玉 | 公开仓库；需按单项确认授权 | 适合重点署名推荐；不复制全文，只引用和二次总结方法 |
-| 15 | 文档处理 | [MarkItDown](https://github.com/microsoft/markitdown) | 把 Office、PDF、网页、图片等资料转换为 Markdown | Microsoft | 公开项目，MIT | 适合作为文档进入 Agent 工作流的公开底座 |
-| 16 | PPT 工作流 | `ppt-master` | 把 PDF、DOCX、URL、Markdown 等资料组织成高质量 SVG/PPT 内容 | 本地自用 skill，未见明确外部作者字段 | 本地整理，不上传源码 | 适合推荐“资料到课件/汇报”的工作流；示例必须用虚构材料 |
-| 17 | PPT 生成 | [PptxGenJS](https://github.com/gitbrent/PptxGenJS) | 用 JavaScript 生成可编辑 PowerPoint 文件 | gitbrent | 公开项目，MIT | 适合作为 Codex 生成 PPTX 的工程底座 |
-| 18 | Markdown 演示 | [Marp CLI](https://github.com/marp-team/marp-cli) | 把 Markdown 转成 slides、PDF、HTML 或 PPTX | Marp Team | 公开项目，MIT | 适合技术课、短讲义和快速分享 |
-| 19 | 程序化视频 | [Remotion](https://github.com/remotion-dev/remotion) | 用 React 生成程序化视频、字幕、动画和数据驱动画面 | Remotion | 公开项目，许可证需按商业使用场景确认 | 适合做技术解释视频底座；商业团队要单独核查许可 |
-| 20 | 技术动画 | [Manim](https://github.com/ManimCommunity/manim) | 用代码生成数学、算法和技术解释动画 | Manim Community | 公开项目，MIT | 适合 AI 教程中的动态概念解释；学习曲线较高 |
+| 1 | [`web-access`](https://github.com/eze-is/web-access) | 自动化浏览 | 统一处理联网搜索、网页抓取、登录态网页和动态页面操作 | 一泽Eze | 真实公开 skill；本地已安装；覆盖浏览器自动化的高频需求 | 登录态网页、账号后台、批量抓取要先确认权限和站点规则 |
+| 2 | `playwright` | 浏览器验证 | 用真实浏览器做页面导航、表单、截图、UI 验证和前端调试 | 本地 skill；底层是 [Microsoft Playwright](https://github.com/microsoft/playwright) | 和 `web-access` 不同，它更适合本地前端测试和可重复 UI 验证 | 与 `web-access` 有重叠，不再同时推荐 Playwright MCP、browser-use、Stagehand |
+| 3 | [`aihot`](https://github.com/KKKKhazix/khazix-skills/tree/main/aihot) | AI 资讯 | 查询 AI HOT 中文 AI 资讯、日报、精选条目和近期动态 | GitHub：KKKKhazix；数据源：[AI HOT](https://aihot.virxact.com) | 是具体 skill，不是泛泛资讯网站；适合做 AI 日报和教学选题输入 | 摘要需回原文核验；不要把 AIHot 摘要当最终引用 |
+| 4 | [`ppt-master`](https://github.com/hugohe3/ppt-master/tree/master/skills/ppt-master) | PPT 生成 | 把 PDF、DOCX、URL、Markdown 等资料转成 SVG 页面并导出 PPTX | GitHub：hugohe3 / PPT Master | 有明确 `skills/ppt-master/SKILL.md`；适合课程、汇报、长文档转 PPT | 示例必须用公开或虚构资料；不要上传客户材料和未授权论文全文 |
+| 5 | [`baoyu-url-to-markdown`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-url-to-markdown) | 资料整理 | 把网页内容整理成干净 Markdown，便于后续总结、改写和入库 | JimLiu / 宝玉 | 输入输出明确，是内容工作流里很常用的基础 skill | 网页版权和引用边界要保留；不要绕过登录墙抓私有内容 |
+| 6 | [`baoyu-markdown-to-html`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-markdown-to-html) | 内容发布 | 把 Markdown 文章转换成适合发布的 HTML 视觉稿 | JimLiu / 宝玉 | 适合教学文章、公众号排版和可视化交付 | 不复制第三方模板全文；发布前人工检查排版和链接 |
+| 7 | [`baoyu-cover-image`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-cover-image) | 视觉生产 | 为文章、课程和教程生成封面图提示词或视觉方案 | JimLiu / 宝玉 | 解决“AI 教程怎么做封面”的真实需求 | 避免商标、肖像和不可授权风格；图中文字要人工复核 |
+| 8 | [`baoyu-xhs-images`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-xhs-images) | 视觉生产 | 生成小红书风格图文卡片和多图内容方案 | JimLiu / 宝玉 | 适合把学习笔记转成可传播图片 | 不放真实账号数据、后台截图或个人隐私素材 |
+| 9 | [`baoyu-slide-deck`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-slide-deck) | 视觉演示 | 生成演示文稿、路演或知识分享用的页面方案 | JimLiu / 宝玉 | 和 PPT Master 互补：一个偏视觉方案，一个偏完整 PPT 流水线 | 需要确认具体子 skill 的授权边界；不复制原始模板全文 |
+| 10 | [`baoyu-youtube-transcript`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-youtube-transcript) | 视频资料 | 提取和整理 YouTube 字幕，作为学习和二次总结输入 | JimLiu / 宝玉 | 适合技术视频学习、课程拆解和资料整理 | 只做摘要和学习笔记，不搬运字幕全文 |
+| 11 | `video-spec-builder` | 视频策划 | 把一个模糊视频想法追问成标准化 `video-spec.md` 和分镜表 | 本地整理 | 真实本地 skill；适合教学视频、产品演示和 AI 视频工作流 | 不公开私有素材、账号节奏和未发布项目脚本 |
+| 12 | `tech-explainer-script-director` | 技术脚本 | 写和改中文技术讲解脚本，强调痛点、钩子、证据和可视化 | 本地整理 | 解决技术视频“像总结、不像视频”的问题，教学价值高 | 技术事实必须有来源；不夸大产品能力 |
+| 13 | `motion-rich-tech-video-director` | 视频导演 | 把技术脚本拆成每个观点对应一个视觉变化，避免 PPT 式静态视频 | 本地整理 | 和 `video-spec-builder`、HyperFrames/Remotion 工作流互补 | 不承诺工具做不到的复杂镜头；输出前要做画面验收 |
 
-## 分类建议
+## 候选但暂不主推
 
-### 入门先看
+| 条目 | 处理 | 原因 |
+|---|---|---|
+| `playwright-interactive` | 暂不主推 | 和 `playwright`、`web-access` 重叠，除非专门讲持久浏览器调试 |
+| `sora` | 暂不主推 | 是真实本地 skill，但依赖账号/API/任务队列，公开风险和时效性较高 |
+| `ui-ux-pro-max` | 暂不主推 | 可能有用，但作者和公开来源不清晰，需要先做单独审计 |
+| `html-skill-benchmark` | 暂不主推 | 偏评测方法，适合未来写成学习笔记，不适合第一期主推 skill |
+| `codex-workflow-skill-miner` | 暂不主推 | 很有价值，但读取历史和记忆，隐私风险高，只适合讲思想，不适合直接公开推广 |
 
-先看 `Agent Skills Spec`、`OpenAI Codex Agent Skills`、`web-access` 和 `Playwright`。这四个能建立对 skill、浏览器自动化和 Agent 工具边界的基本理解。
+## 明确移除项
 
-### 做教学内容
+| 旧条目 | 移除原因 |
+|---|---|
+| Agent Skills Spec | 是标准，不是 skill |
+| OpenAI Codex Agent Skills 文档 | 是文档，不是 skill |
+| Anthropic Skills 仓库总入口 | 是样例库总入口，不该作为一个具体 skill 推荐 |
+| Playwright MCP / browser-use / Stagehand | 和 `web-access`、`playwright` 重复，且更像工具或框架 |
+| OpenClaw / Hermes Agent | 是 Agent 项目，不是具体 skill |
+| OpenAI Agents SDK / Microsoft Agent Framework | 是框架，不是 skill |
+| MarkItDown / PptxGenJS / Marp / Remotion / Manim | 是工具或库，不是 agent skill；可在学习笔记或工具底座里引用 |
 
-优先看 `ppt-master`、`PptxGenJS`、`Marp CLI`、`Remotion`、`Manim` 和 `baoyu-skills`。它们分别覆盖课件、演示、视频和视觉素材。
+## 下一步审计规则
 
-### 做工程化 Agent
-
-优先看 `OpenAI Agents SDK Python`、`Microsoft Agent Framework`、`Playwright MCP`、`Stagehand`、`OpenClaw` 和 `Hermes Agent`。这组更适合从“能跑 demo”走向“能控制、能编排、能审计”。
-
-## 未收录原则
-
-以下内容不放入第一期公开清单：含真实聊天数据、真实交易记录、账号后台、客户材料、服务器配置、本机密钥、私有运行时修复、未授权课程原文或无法确认公开边界的本地 skill。
+后续新增 skill 时先补一行审计结论：`通过 / 候选 / 移除`，并说明来源、作者、适用场景、是否本地、是否会触碰隐私。没有通过审计的内容不再为了凑数量放进主清单。

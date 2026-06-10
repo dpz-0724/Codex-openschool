@@ -2,7 +2,7 @@
 
 这里会持续分享我在使用 Codex、AI Agent、自动化工具和内容生产工作流时沉淀下来的公开材料。第一期先做一个完整入口，分成三块：
 
-- Skills 分享：20 个高质量 skills、工具或 skill 生态项目。
+- Skills 分享：审计后主推 13 个真实 skills，不再为凑数混入标准、框架或普通工具。
 - 学习笔记：20 个可公开整理的学习主题。
 - 提示词模板：20 个适合教学、编程、研究、PPT、视频和复盘的模板。
 
@@ -12,7 +12,7 @@
 
 | 方向 | 数量 | 入口 | 说明 |
 |---|---:|---|---|
-| Skills 分享 | 20 | [skills/README.md](skills/README.md) | 覆盖 skill 标准、浏览器自动化、Agent 框架、AI 资讯、文档/PPT、视频和技术动画 |
+| Skills 分享 | 13 | [skills/README.md](skills/README.md) | 审计后只保留真实 skill：自动化浏览、AI 资讯、PPT、宝玉内容/视觉 skills、视频脚本和视频导演 |
 | 学习笔记 | 20 | [notes/README.md](notes/README.md) | 从本地笔记中筛选可公开主题，只发布脱敏后的主题、摘要和整理方向 |
 | 提示词模板 | 20 | [prompts/prompt-templates-20.md](prompts/prompt-templates-20.md) | 模板为原创改写结构，附来源启发，不复制第三方长文本 |
 
