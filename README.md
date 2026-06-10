@@ -3,8 +3,8 @@
 这里会持续分享我在使用 Codex、AI Agent、自动化工具和内容生产工作流时沉淀下来的公开材料。第一期先做一个完整入口，分成三块：
 
 - Skills 分享：审计后主推 13 个真实 skills，不再为凑数混入标准、框架或普通工具。
-- 学习笔记：20 个可公开整理的学习主题。
-- 提示词模板：20 个适合教学、编程、研究、PPT、视频和复盘的模板。
+- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记。
+- 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
 
 所有内容都按“可公开、可复用、可注明来源”的标准整理。本仓库不会上传本地私有 skill 源码、真实聊天记录、账号后台、客户材料、密钥、个人路径或未脱敏截图。
 
@@ -13,18 +13,19 @@
 | 方向 | 数量 | 入口 | 说明 |
 |---|---:|---|---|
 | Skills 分享 | 13 | [skills/README.md](skills/README.md) | 审计后只保留真实 skill：自动化浏览、AI 资讯、PPT、宝玉内容/视觉 skills、视频脚本和视频导演 |
-| 学习笔记 | 20 | [notes/README.md](notes/README.md) | 从本地笔记中筛选可公开主题，只发布脱敏后的主题、摘要和整理方向 |
-| 提示词模板 | 20 | [prompts/prompt-templates-20.md](prompts/prompt-templates-20.md) | 模板为原创改写结构，附来源启发，不复制第三方长文本 |
+| 学习笔记 | 4 | [notes/README.md](notes/README.md) | 只保留已成文、已脱敏、能直接阅读的公开笔记 |
+| 提示词模板 | 8 + 2 | [prompts/README.md](prompts/README.md) | 8 个精选模板，加 2 个已展开专题提示词 |
 
 ## 已展开笔记
 
 - [Agent 自动化浏览与软件操作技术路线](notes/agent-automation-browser.md)
 - [Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)
-- [第一期 20 个学习笔记主题目录](notes/learning-notes-20.md)
+- [企业 Agent 数据治理与自助分析落地手册](notes/enterprise-agent-data-governance.md)
+- [Codex + PPT Master：从资料到高质量 PPT 的工作流](notes/codex-ppt-master-workflow.md)
 
 ## 已展开提示词
 
-- [第一期 20 个提示词模板](prompts/prompt-templates-20.md)
+- [高价值提示词模板精选](prompts/high-value-prompts.md)
 - [Codex 自我进化提示词](prompts/codex-self-evolution.md)
 - [AI 教程视觉提示词方法：参考宝玉 skills](prompts/visual-prompts-baoyu-skills.md)
 
@@ -46,11 +47,12 @@
 ├── notes/
 │   ├── README.md
 │   ├── agent-automation-browser.md
+│   ├── codex-ppt-master-workflow.md
+│   ├── enterprise-agent-data-governance.md
 │   ├── enterprise-agent-harness.md
-│   └── learning-notes-20.md
 └── prompts/
     ├── README.md
     ├── codex-self-evolution.md
-    ├── prompt-templates-20.md
+    ├── high-value-prompts.md
     └── visual-prompts-baoyu-skills.md
 ```
