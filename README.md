@@ -8,13 +8,28 @@
 
 所有内容都按“可公开、可复用、可注明来源”的标准整理。本仓库不会上传本地私有 skill 源码、真实聊天记录、账号后台、客户材料、密钥、个人路径或未脱敏截图。
 
-## 第一期开源内容
+## 内容入口
 
-| 方向 | 数量 | 入口 | 说明 |
-|---|---:|---|---|
-| Skills 分享 | 13 | [skills/README.md](skills/README.md) | 审计后只保留真实 skill：自动化浏览、AI 资讯、PPT、宝玉内容/视觉 skills、视频脚本和视频导演 |
-| 学习笔记 | 4 | [notes/README.md](notes/README.md) | 只保留已成文、已脱敏、能直接阅读的公开笔记 |
-| 提示词模板 | 8 + 2 | [prompts/README.md](prompts/README.md) | 8 个精选模板，加 2 个已展开专题提示词 |
+### Skills 分享
+
+- 数量：13 个审计后保留的真实 skills。
+- 入口：[skills/README.md](skills/README.md)
+- 内容：自动化浏览、AI 资讯、PPT、宝玉内容/视觉 skills、视频脚本和视频导演。
+- 标准：只收录具体可用的 skill 或明确外部项目，不把普通方法论、标准或重复能力凑成条目。
+
+### 学习笔记
+
+- 数量：5 篇已成文、已脱敏、可直接阅读的公开笔记。
+- 入口：[notes/README.md](notes/README.md)
+- 内容：Agent 自动化浏览、Enterprise Agent Harness、企业数据治理、PPT Master 工作流、个人知识库搭建。
+- 标准：先有正文，再进入目录；没有正文的选题只留在本地待办。
+
+### 提示词模板
+
+- 数量：10 个可用入口，其中包含 8 个精选模板和 2 个已展开专题提示词。
+- 入口：[prompts/README.md](prompts/README.md)
+- 内容：Codex 自我进化、Agent 审计、PPT 生产、技术内容创作、视觉提示词方法。
+- 标准：只保留能直接拿去执行、能说明使用边界的提示词。
 
 ## 已展开笔记
 
@@ -22,6 +37,7 @@
 - [Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)
 - [企业 Agent 数据治理与自助分析落地手册](notes/enterprise-agent-data-governance.md)
 - [Codex + PPT Master：从资料到高质量 PPT 的工作流](notes/codex-ppt-master-workflow.md)
+- [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](notes/personal-knowledge-base-agent-wiki.md)
 
 ## 已展开提示词
 
@@ -50,6 +66,7 @@
 │   ├── codex-ppt-master-workflow.md
 │   ├── enterprise-agent-data-governance.md
 │   ├── enterprise-agent-harness.md
+│   └── personal-knowledge-base-agent-wiki.md
 └── prompts/
     ├── README.md
     ├── codex-self-evolution.md

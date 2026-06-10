@@ -1,4 +1,4 @@
-# OpenClaw / Hermes 类 Agent 操作软件任务的技术方案调研报告
+# Agent 自动化浏览与软件操作技术路线
 
 日期：2026-06-06  
 范围：这里的 “OpenClaw / Hermes 类 Agent” 指可以代表用户打开网页、操作桌面软件、点击按钮、填写表单、上传文件、提交流程的通用 Agent 运行时。上一版误写为 OpenCloud；本版已修正为 OpenClaw，并补充 Hermes 官方仓库公开文档里的浏览器执行方式。本报告仍以工程实现为主，不假设 OpenClaw 或 Hermes 已经内置完整 Windows 桌面软件自动化能力，而是区分 Web Agent、Computer Use、RPA、Windows UIA 与视觉坐标方案。

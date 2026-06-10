@@ -19,6 +19,7 @@
 | 2 | [Enterprise Agent Harness 学习笔记](enterprise-agent-harness.md) | 想把 Agent 从 demo 做成可测试、可审计系统的人 | 有完整工程化框架，覆盖 golden case、trace、replay、guardrail、audit | 通过 |
 | 3 | [企业 Agent 数据治理与自助分析落地手册](enterprise-agent-data-governance.md) | 做企业数据 Agent、BI Agent、自助分析的人 | 解释业务定义、语义层、canonical model、SOP 和验收题库如何组合 | 通过 |
 | 4 | [Codex + PPT Master：从资料到高质量 PPT 的工作流](codex-ppt-master-workflow.md) | 想用 Codex 做课程、汇报、长文档转 PPT 的人 | 给出稳定流程和验收点，不只是“让 AI 做 PPT” | 通过 |
+| 5 | [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](personal-knowledge-base-agent-wiki.md) | 想用 Obsidian、Markdown、Codex 或 Agent 搭建长期知识库的人 | 从本地 notebook 的成熟方法中提炼出分层架构、入库门禁、查询回写和 lint 流程 | 通过 |
 
 ## 已下架内容
 
