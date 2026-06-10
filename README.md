@@ -4,14 +4,11 @@
 
 ## Skills 分享
 
-后续会整理一些自用且好用的 skills，包括但不限于：
+第一期先整理一批适合教学和复用的 skills，不直接上传本地源码，只做用途、来源和风险说明：
 
-- Codex / AI Agent 工作流 skills
-- 自动化浏览、资料整理、内容生产相关 skills
-- 本地工具、脚本和常用操作流程
-- 能提高重复任务效率的小型实践模板
+- [第一期开源 Skills 推荐清单](skills/README.md)
 
-这些内容会尽量写清楚适用场景、使用方式和注意事项，方便直接拿来改造成自己的工作流。
+已覆盖方向：自动化浏览、AI 资讯、文档处理、PPT、UI/前端评测、视频内容生产和学术写作。
 
 ## 学习笔记
 
@@ -20,25 +17,32 @@
 | 日期 | 标题 | 主题 |
 |---|---|---|
 | 2026-06-06 | [OpenClaw / Hermes 类 Agent 操作软件任务的技术方案调研报告](notes/agent-automation-browser.md) | Web Agent、CDP、DOM、UIA、RPA、Computer Use |
+| 2026-06-10 | [Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md) | Agent 工程化、测试、回放、审计、上线门禁 |
 
 ## 提示词分享
 
-后续会收集一些实际使用中效果不错的提示词，例如：
+第一期先放两类可复用提示词：
 
-- 写作、总结、改稿类提示词
-- 编程、调试、代码审查类提示词
-- 资料调研、竞品分析、方案设计类提示词
-- 适合长期复用的个人工作流提示词
+- [提示词清单](prompts/README.md)
+- [Codex 自我进化提示词](prompts/codex-self-evolution.md)
+- [AI 教程视觉提示词方法：参考宝玉 skills](prompts/visual-prompts-baoyu-skills.md)
 
-提示词会尽量附上使用场景和可替换变量，避免只是一段孤立文本。
+提示词会尽量附上使用场景和可替换变量，避免只是一段孤立文本。涉及个人记录、账号后台、客户材料、本机配置的内容不会原样公开。
 
 ## 目录结构
 
 ```text
 .
 ├── README.md
-└── notes/
-    └── agent-automation-browser.md
+├── skills/
+│   └── README.md
+├── notes/
+│   ├── agent-automation-browser.md
+│   └── enterprise-agent-harness.md
+└── prompts/
+    ├── README.md
+    ├── codex-self-evolution.md
+    └── visual-prompts-baoyu-skills.md
 ```
 
 后续新增内容会按 `skills/`、`notes/`、`prompts/` 三个方向继续整理。
