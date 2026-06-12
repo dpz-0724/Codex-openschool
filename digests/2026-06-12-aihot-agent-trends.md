@@ -183,7 +183,6 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 | Perplexity Computer 集成 Deep Research | 主要是产品能力更新，新手可操作细节不足 | 等官方文档或实测路径更清晰 |
 | Hermes Agent Desktop / Meoo CLI / WorkBuddy | 工具属性强，需要安装体验和边界验证 | 进入后续“工具实测”候选池 |
 | MiMo Code V0.1.0 | 亮点在记忆、会话检查点和终端 Agent，但目前只看到 AIHot 摘要和公众号入口 | 先核 GitHub、安装门槛、隐私边界，再决定是否做“国产终端 Agent 实测” |
-| Cursor Bugbot 更新 | 和 Auto-review 同属代码审查方向，暂时不重复扩成第二篇 | 后续可合并成“Agent 代码审查工作流”专题 |
 | Google DeepMind 多智能体安全研究资助 | 偏行业和研究资助，新手短期可操作性弱 | 观察是否出现可直接学习的多 Agent 安全案例 |
 | Text-To-Lottie | 方向很适合内容生产型 skill，但需要实测输出质量和本地预览闭环 | 核验公开仓库、安装命令和示例后，再考虑进入内容生产 skills |
 | OpenRouter 与 Cursor 集成 | 更像模型接入配置指南，不是独立 skill | 只有在做“编码 Agent 模型路由”专题时再收录 |
@@ -200,7 +199,8 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 `qiaomu-ai-prd` 拆成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)，并加入 Skills 导览。
 - 已把 EurekAgent 的环境工程视角补进常青教程：[Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)。
 - 已把“长任务环境规格”单独扩展成可复制模板：[Agent 长任务环境规格模板](../notes/agent-long-task-environment-spec.md)。
-- 已给 3 篇最适合拉新手入门的内容补传播素材：[Codex OpenSchool 传播素材包](../share/README.md)。
+- 已给 4 篇适合拉新手入门的内容补传播素材：[Codex OpenSchool 传播素材包](../share/README.md)。
+- 已把 Cursor Auto-review 和 Bugbot 更新合并沉淀成常青教程：[Agent 代码审查工作流](../notes/agent-code-review-workflow.md)。
 
 下一步优先级：
 

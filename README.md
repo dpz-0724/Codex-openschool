@@ -7,7 +7,7 @@
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
 - 新鲜拆解：从 AIHot 和一手来源里提取近期 Agent 值得学的内容，不做热点搬运。
 - Skills 分享：全量审计后按专题主推 28 个真实 skills，不再为凑数混入标准、框架或普通工具。
-- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、权限分级、skills 触发边界、Spec 模板、AI 可执行 PRD、长任务环境规格、实战和避坑。
+- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、权限分级、代码审查、skills 触发边界、Spec 模板、AI 可执行 PRD、长任务环境规格、实战和避坑。
 - 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
 - 传播素材：把最适合新手入门的内容整理成可复制短帖、长帖和标题备选，方便带来真实读者。
 
@@ -37,9 +37,9 @@
 
 ### 学习笔记
 
-- 数量：15 篇已成文、已脱敏、可直接阅读的公开笔记。
+- 数量：16 篇已成文、已脱敏、可直接阅读的公开笔记。
 - 入口：[notes/README.md](notes/README.md)
-- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、MCP vs CLI 工具调用选型、Agent 自主权限分级、Skill 触发边界、Agent 编程前 Spec 模板、AI 可执行 PRD、Agent 长任务环境规格、Enterprise Agent Harness 与环境工程、企业数据治理、PPT Master 工作流、个人知识库搭建。
+- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、MCP vs CLI 工具调用选型、Agent 自主权限分级、Agent 代码审查工作流、Skill 触发边界、Agent 编程前 Spec 模板、AI 可执行 PRD、Agent 长任务环境规格、Enterprise Agent Harness 与环境工程、企业数据治理、PPT Master 工作流、个人知识库搭建。
 - 标准：先有正文，再进入目录；没有正文的选题只留在本地待办。
 
 ### 提示词模板
@@ -64,6 +64,7 @@
 - [Agent 自动化浏览与软件操作技术路线](notes/agent-automation-browser.md)
 - [Agent 工具调用选型：什么时候用 MCP，什么时候用 CLI](notes/agent-tooling-mcp-vs-cli.md)
 - [Agent 自主权限分级清单：什么时候放手，什么时候必须停下来](notes/agent-autonomy-permission-ladder.md)
+- [Agent 代码审查工作流：从 Auto-review 到 Bugbot](notes/agent-code-review-workflow.md)
 - [Skill 描述怎么写才不误触发：description 是触发器，不是宣传语](notes/skill-description-trigger-boundaries.md)
 - [Agent 编程前的 10 行 Spec 模板：先把需求写成可验收任务](notes/agent-coding-10-line-spec-template.md)
 - [AI 可执行 PRD：把一句话需求写成 Agent 能实现的产品规格](notes/agent-executable-prd.md)
@@ -123,6 +124,7 @@
 │   ├── agent-automation-browser.md
 │   ├── agent-tooling-mcp-vs-cli.md
 │   ├── agent-autonomy-permission-ladder.md
+│   ├── agent-code-review-workflow.md
 │   ├── skill-description-trigger-boundaries.md
 │   ├── agent-coding-10-line-spec-template.md
 │   ├── agent-executable-prd.md

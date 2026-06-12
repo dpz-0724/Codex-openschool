@@ -20,7 +20,7 @@ https://github.com/dpz-0724/Codex-openschool
 1. 不承诺“全自动赚钱”“替代人类”“一键完成所有工作”。
 2. 不展示账号后台、聊天记录、客户材料、密钥、本地路径或未脱敏截图。
 3. 不搬运外部文章原文，只发自己的学习路线、模板和方法。
-4. 每次传播只讲一个具体问题，不把 15 篇笔记一次性全塞给读者。
+4. 每次传播只讲一个具体问题，不把 16 篇笔记一次性全塞给读者。
 5. 发布后记录链接和 Star 变化，判断什么内容真的有效。
 
 ## 仓库一句话介绍
@@ -252,6 +252,68 @@ https://github.com/dpz-0724/Codex-openschool/blob/main/notes/agent-long-task-env
 https://github.com/dpz-0724/Codex-openschool
 ```
 
+## 第四篇：Agent 代码审查工作流
+
+入口：
+
+- 仓库内页：[Agent 代码审查工作流](../notes/agent-code-review-workflow.md)
+- GitHub 链接：https://github.com/dpz-0724/Codex-openschool/blob/main/notes/agent-code-review-workflow.md
+
+适合读者：
+
+- 已经开始让 Agent 写代码、改文件、提交 PR 的人。
+- 经常遇到 Agent “说完成了”，但 diff 很难审的人。
+- 想把 AI 编程变成可检查流程，而不是一次性生成的人。
+
+### 标题备选
+
+1. 让 Agent 写代码前，先给它加一套审查流程
+2. AI 编程别只看结果：我整理了一套 Agent 代码审查闭环
+3. 从 Auto-review 到 Bugbot：新手怎么理解 Agent 代码审查
+
+### 短帖版本
+
+```text
+让 Agent 写代码，最危险的不是它写错，而是它改了什么、为什么改、有没有越权，你都说不清。
+
+我把近期 Cursor Auto-review 和 Bugbot 的思路，整理成了一篇新手版 Agent 代码审查工作流：
+
+动作前：判断这一步是否越权。
+提交前：检查 diff 是否符合任务和安全边界。
+PR 后：让自动审查聚焦新增变更，不重复制造噪音。
+
+笔记：
+https://github.com/dpz-0724/Codex-openschool/blob/main/notes/agent-code-review-workflow.md
+```
+
+### 长帖版本
+
+```text
+很多人用 Agent 写代码的流程是：
+
+“帮我实现这个功能。”
+
+然后等 Agent 说完成，再看页面或跑测试。
+
+这个流程的问题是：失败发现得太晚。
+
+真正稳一点的 Agent 编程，应该把审查前移成三段：
+
+1. 动作前：它准备读什么、改什么、跑什么命令，是否越权？
+2. 提交前：真实 git diff 是否符合任务，有没有测试和隐私扫描？
+3. PR 后：自动审查是否聚焦新增变更，而不是反复制造噪音？
+
+我把 Cursor Auto-review 和 Bugbot 的近期更新，拆成了一篇给新手看的常青笔记。
+
+它不要求你一定用某个工具，而是教你怎么把 Agent 代码生成变成可检查、可回放、可合并的工程流程。
+
+笔记：
+https://github.com/dpz-0724/Codex-openschool/blob/main/notes/agent-code-review-workflow.md
+
+仓库：
+https://github.com/dpz-0724/Codex-openschool
+```
+
 ## 仓库整体传播版本
 
 ```text
@@ -265,6 +327,7 @@ https://github.com/dpz-0724/Codex-openschool
 - 第一个 Agent 实战任务
 - MCP vs CLI 工具选型
 - Agent 权限分级清单
+- Agent 代码审查工作流
 - Skill 触发边界教程
 - AI 可执行 PRD 模板
 - 长任务 Agent 环境规格模板
@@ -288,6 +351,7 @@ https://github.com/dpz-0724/Codex-openschool
 | 待补 | 待补 | AI Agent 新手入门路线图 | 待补 | 2 | 待补 | 待发布 |
 | 待补 | 待补 | 第一个 Agent 实战任务 | 待补 | 2 | 待补 | 待发布 |
 | 待补 | 待补 | Agent 长任务环境规格模板 | 待补 | 2 | 待补 | 待发布 |
+| 待补 | 待补 | Agent 代码审查工作流 | 待补 | 2 | 待补 | 待发布 |
 
 ## 下次可做的传播主题
 
