@@ -17,7 +17,7 @@
 - 一手资源：把 OpenAI、Anthropic、Microsoft、MCP 和 GitHub 等官方资料整理成中文导读，告诉新手先读哪篇。
 - 新鲜拆解：从 AIHot 和一手来源里提取近期 Agent 值得学的内容，不做热点搬运。
 - Skills 分享：全量审计后按专题主推 34 个真实 skills，不再为凑数混入标准、框架或普通工具。
-- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、浏览器调试、共享上下文、终端 Agent 可重复工作流、权限分级、代码审查、skills 触发边界、Spec 模板、AI 可执行 PRD、Goal 指令、长任务环境规格、实战和避坑。
+- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、浏览器调试、共享上下文、终端 Agent 可重复工作流、新工具 / skill 审计、权限分级、代码审查、skills 触发边界、Spec 模板、AI 可执行 PRD、Goal 指令、长任务环境规格、实战和避坑。
 - 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
 
 所有内容都按“可公开、可复用、可注明来源”的标准整理。本仓库不会上传本地私有 skill 源码、真实聊天记录、账号后台、客户材料、密钥、个人路径或未脱敏截图。
@@ -59,9 +59,9 @@
 
 ### 学习笔记
 
-- 数量：20 篇已成文、已脱敏、可直接阅读的公开笔记。
+- 数量：21 篇已成文、已脱敏、可直接阅读的公开笔记。
 - 入口：[notes/README.md](notes/README.md)
-- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、Codex 浏览器开发者模式、共享上下文与知识编译、终端 Agent 可重复工作流、MCP vs CLI 工具调用选型、Agent 自主权限分级、Agent 代码审查工作流、Skill 触发边界、Agent 编程前 Spec 模板、AI 可执行 PRD、Codex Goal 指令、Agent 长任务环境规格、Enterprise Agent Harness 与环境工程、企业数据治理、PPT Master 工作流、个人知识库搭建。
+- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、Codex 浏览器开发者模式、共享上下文与知识编译、终端 Agent 可重复工作流、新工具 / skill 安装前审计、MCP vs CLI 工具调用选型、Agent 自主权限分级、Agent 代码审查工作流、Skill 触发边界、Agent 编程前 Spec 模板、AI 可执行 PRD、Codex Goal 指令、Agent 长任务环境规格、Enterprise Agent Harness 与环境工程、企业数据治理、PPT Master 工作流、个人知识库搭建。
 - 标准：先有正文，再进入目录；没有正文的选题只留在本地待办。
 
 ### 提示词模板
@@ -87,6 +87,7 @@
 - [Codex 浏览器开发者模式：把网页调试变成可验证的 Agent 任务](notes/codex-browser-developer-mode.md)
 - [Agent 共享上下文与知识编译：别把长期协作塞进聊天记录](notes/agent-shared-context-knowledge-compile.md)
 - [终端 Agent 可重复工作流：从一次性提示到可审计任务卡](notes/agent-terminal-workflow-card.md)
+- [Agent 新工具 / Skill 安装前审计清单：别被热榜带着装](notes/agent-tool-skill-audit-checklist.md)
 - [Agent 工具调用选型：什么时候用 MCP，什么时候用 CLI](notes/agent-tooling-mcp-vs-cli.md)
 - [Agent 自主权限分级清单：什么时候放手，什么时候必须停下来](notes/agent-autonomy-permission-ladder.md)
 - [Agent 代码审查工作流：从 Auto-review 到 Bugbot](notes/agent-code-review-workflow.md)
@@ -159,6 +160,7 @@
 │   ├── codex-browser-developer-mode.md
 │   ├── agent-shared-context-knowledge-compile.md
 │   ├── agent-terminal-workflow-card.md
+│   ├── agent-tool-skill-audit-checklist.md
 │   ├── agent-tooling-mcp-vs-cli.md
 │   ├── agent-autonomy-permission-ladder.md
 │   ├── agent-code-review-workflow.md

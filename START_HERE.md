@@ -24,6 +24,7 @@
 | 已经开始让 Agent 调工具 | [Agent 工具调用选型](notes/agent-tooling-mcp-vs-cli.md) | 判断什么时候用 MCP、CLI、API、浏览器 |
 | 正在让 Codex 调试网页 | [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) | 分清 in-app browser、Chrome 扩展和 Developer mode |
 | 终端里反复让 Agent 做同一类任务 | [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) | 把一次性提示沉淀成可审计 workflow card |
+| 看到一个新 Agent 工具 / skill 想安装 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) | 先判断来源、权限、密钥、输出和回滚 |
 | 担心 Agent 越权或乱操作 | [Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 给任务标 L0-L4 风险级别 |
 | 让 Agent 写代码但 diff 不好审 | [Agent 代码审查工作流](notes/agent-code-review-workflow.md) | 建立动作前、提交前、PR 后三段式审查 |
 | 想把一句话任务交给 Codex 长时间执行 | [Codex Goal 指令写法](notes/codex-goal-writing-template.md) | 把模糊需求写成有验证、边界和暂停条件的 `/goal` |
@@ -59,7 +60,7 @@
 | Day 1 | 分清概念 | [概念 FAQ](notes/agent-concepts-faq.md) + [术语表](notes/agent-glossary.md) | 解释 Agent、Workflow、Skill、Tool 的区别 |
 | Day 2 | 跑第一个任务 | [第一个 Agent 实战任务](notes/first-agent-web-research-task.md) | 一篇公开网页 Markdown 笔记 |
 | Day 3 | 工具调用 | [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md) | 一张工具选型表 |
-| Day 4 | 浏览器和软件操作 | [自动化浏览技术路线](notes/agent-automation-browser.md) + [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) | 判断任务适合 API、浏览器、Developer mode 还是桌面控制 |
+| Day 4 | 浏览器和软件操作 | [自动化浏览技术路线](notes/agent-automation-browser.md) + [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) + [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) | 判断任务适合 API、浏览器、Developer mode 还是桌面控制，并知道新工具该不该装 |
 | Day 5 | 权限和护栏 | [自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 一份 L0-L4 风险分级 |
 | Day 6 | 代码或产品交接 | [Goal 指令](notes/codex-goal-writing-template.md) + [10 行 Spec](notes/agent-coding-10-line-spec-template.md) + [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) + [AI 可执行 PRD](notes/agent-executable-prd.md) | 一个可验收、有边界的小需求规格或 workflow card |
 | Day 7 | 长任务和复盘 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) + [共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) | 一份可交给 Agent 执行的环境规格，一份可继承的共享上下文 |
@@ -89,9 +90,10 @@
 
 ### 我想理解 skills 怎么用
 
-1. [Skill 描述怎么写才不误触发](notes/skill-description-trigger-boundaries.md)
-2. [Skills 分享目录](skills/README.md)
-3. [Codex 自我进化提示词](prompts/codex-self-evolution.md)
+1. [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md)
+2. [Skill 描述怎么写才不误触发](notes/skill-description-trigger-boundaries.md)
+3. [Skills 分享目录](skills/README.md)
+4. [Codex 自我进化提示词](prompts/codex-self-evolution.md)
 
 重点：skill 不是工具名，也不是宣传语；它应该写清什么时候用、什么时候不用。
 
@@ -120,6 +122,7 @@
 | 只让 Agent “看着办” | 目标、边界、产物都不清楚 | [Goal 指令写法](notes/codex-goal-writing-template.md) |
 | 每次都复制一大段终端提示词 | 经验留在聊天里，工具边界和验收证据不稳定 | [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) |
 | 把工具越多当成越强 | 工具越多，权限和错误面越大 | [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md) |
+| 看到热榜工具就直接安装 | 来源、权限、密钥和回滚方式不清楚 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) |
 | 把 skill 写成泛泛能力介绍 | 容易误触发或重复触发 | [Skill 触发边界](notes/skill-description-trigger-boundaries.md) |
 | 只看 Agent 总结，不看真实 diff 或产物 | 容易把“说完成了”当成完成 | [代码审查工作流](notes/agent-code-review-workflow.md) |
 | 让长任务无限跑 | 没有预算、停止条件和回放证据 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) |
@@ -139,12 +142,13 @@
 2. [术语表](notes/agent-glossary.md)
 3. [第一个 Agent 实战任务](notes/first-agent-web-research-task.md)
 4. [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md)
-5. [权限分级清单](notes/agent-autonomy-permission-ladder.md)
-6. [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md)
-7. [Codex Goal 指令写法](notes/codex-goal-writing-template.md)
-8. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
-9. [AI 可执行 PRD](notes/agent-executable-prd.md)
-10. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
+5. [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md)
+6. [权限分级清单](notes/agent-autonomy-permission-ladder.md)
+7. [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md)
+8. [Codex Goal 指令写法](notes/codex-goal-writing-template.md)
+9. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
+10. [AI 可执行 PRD](notes/agent-executable-prd.md)
+11. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
 
 想直接找资源：
 
