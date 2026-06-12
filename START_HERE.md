@@ -25,6 +25,7 @@
 | 正在让 Codex 调试网页 | [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) | 分清 in-app browser、Chrome 扩展和 Developer mode |
 | 终端里反复让 Agent 做同一类任务 | [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) | 把一次性提示沉淀成可审计 workflow card |
 | Agent 说完成了，但你不知道它实际做了什么 | [Agent 运行日志与 Trace](notes/agent-trace-observability-beginner.md) | 学会检查来源、工具、产物、失败和验证证据 |
+| 反复给 Agent 解释同一套偏好和规范 | [Agent 个性化分层](notes/agent-custom-instructions-vs-skills.md) | 判断该写 Prompt、项目约定、Custom Instructions 还是 Skill |
 | 看到一个新 Agent 工具 / skill 想安装 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) | 先判断来源、权限、密钥、输出和回滚 |
 | 让代码 Agent 改代码但它总是误读项目 | [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) | 先补 LSP、类型检查、测试和 git 边界 |
 | 担心 Agent 越权或乱操作 | [Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 给任务标 L0-L4 风险级别 |
@@ -94,10 +95,11 @@
 
 ### 我想理解 skills 怎么用
 
-1. [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md)
-2. [Skill 描述怎么写才不误触发](notes/skill-description-trigger-boundaries.md)
-3. [Skills 分享目录](skills/README.md)
-4. [Codex 自我进化提示词](prompts/codex-self-evolution.md)
+1. [Agent 个性化分层](notes/agent-custom-instructions-vs-skills.md)
+2. [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md)
+3. [Skill 描述怎么写才不误触发](notes/skill-description-trigger-boundaries.md)
+4. [Skills 分享目录](skills/README.md)
+5. [Codex 自我进化提示词](prompts/codex-self-evolution.md)
 
 重点：skill 不是工具名，也不是宣传语；它应该写清什么时候用、什么时候不用。
 
@@ -128,6 +130,7 @@
 | 把工具越多当成越强 | 工具越多，权限和错误面越大 | [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md) |
 | 看到热榜工具就直接安装 | 来源、权限、密钥和回滚方式不清楚 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) |
 | 让 Agent 只靠全文搜索理解代码 | 容易猜错类型、签名和引用关系 | [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) |
+| 把所有偏好都塞进全局指令 | 会污染所有任务，让 Agent 带着无关规则工作 | [Agent 个性化分层](notes/agent-custom-instructions-vs-skills.md) |
 | 把 skill 写成泛泛能力介绍 | 容易误触发或重复触发 | [Skill 触发边界](notes/skill-description-trigger-boundaries.md) |
 | 只看 Agent 总结，不看来源、工具、diff 或产物 | 容易把“说完成了”当成完成 | [运行日志与 Trace](notes/agent-trace-observability-beginner.md) |
 | 让长任务无限跑 | 没有预算、停止条件和回放证据 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) |

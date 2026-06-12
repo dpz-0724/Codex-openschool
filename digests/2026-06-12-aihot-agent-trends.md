@@ -11,7 +11,7 @@
 
 ## 本期结论
 
-这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 11 个方法主题：
+这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 12 个方法主题：
 
 1. Agent 自主性需要按风险分层，而不是只有“全自动 / 每步确认”两个档位。
 2. Skills 正在变成团队约定和任务方法的载体，关键是触发边界要写清楚。
@@ -24,6 +24,7 @@
 9. 新工具 / skill 不应该看到热榜就安装，要先审计来源、权限、密钥、输出证据和回滚方式。
 10. 代码 Agent 准不准不只看提示词，还取决于 language server、类型检查、测试和 git 边界这些环境条件。
 11. Agent 的最终回答不是证据，网页调研、代码修改、浏览器自动化和长任务都应该留下来源、工具、产物、失败和验证记录。
+12. Agent 个性化不能只靠反复粘贴提示词，也不能把所有规则塞进全局指令；要区分一次性 Prompt、项目约定、Custom Instructions 和 Skills。
 
 本期已经落地到仓库的动作：新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“任务判断、工具选择、浏览边界、护栏、验收”做成可复制模板。
 
@@ -40,7 +41,7 @@
 | Text-To-Lottie | [diffusionstudio/lottie](https://github.com/diffusionstudio/lottie) | 进入 Skills 主推 | 好 skill 不只生成文件，还要有本地预览、定位帧和验收闭环 | [Skills 专题导览](../skills/README.md) |
 | baoyu-design 更新 | [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) | 进入 Skills 主推 | 设计类 skill 的关键是复用设计系统，同时保护 Figma 文件和品牌资产 | [Skills 专题导览](../skills/README.md) |
 | Cursor Auto-review | [Cursor Blog](https://cursor.com/blog/agent-autonomy-auto-review) | 已沉淀成常青笔记 | Agent 自主权限要按风险分层，而不是二选一 | [权限分级清单](../notes/agent-autonomy-permission-ladder.md) |
-| Replit Agent Skills | [Replit Blog](https://replit.com/blog/custom-skills) | 作为趋势来源，不单列 skill | Custom Instructions 是长期约定，Skills 是按任务加载的操作手册 | [Skill 触发边界](../notes/skill-description-trigger-boundaries.md) |
+| Replit Agent Customization / Skills | [Replit X](https://x.com/Replit/status/2065146579326271883) / [Replit Blog](https://replit.com/blog/custom-skills) | 已沉淀成常青笔记，不单列为 skill | Custom Instructions、项目约定、Skills 和一次性 Prompt 要分层管理，避免重复提示和上下文污染 | [Agent 个性化分层](../notes/agent-custom-instructions-vs-skills.md) / [Skill 触发边界](../notes/skill-description-trigger-boundaries.md) |
 | DeLM：Decentralized Multi-Agent Systems with Shared Context | [arXiv:2606.10662](https://arxiv.org/abs/2606.10662) | 已沉淀成常青笔记 | 长期协作需要共享已验证上下文、任务队列和紧凑更新，不能只依赖聊天历史 | [共享上下文与知识编译](../notes/agent-shared-context-knowledge-compile.md) |
 | GitHub Copilot CLI 自定义 Agent | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/) | 已沉淀成常青笔记，不进入 Skills 主推 | 终端里的“一次性提示”正在变成可复用 workflow；关键是最小工具、禁止动作、输出合同和停止条件 | [终端 Agent 可重复工作流](../notes/agent-terminal-workflow-card.md) |
 | GitHub Copilot CLI + Language Server | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers/) | 已沉淀成常青笔记 | CLI Agent 不能只靠 grep 理解代码；language server、类型检查、测试和 git 边界是稳定改代码的环境基础 | [Agent 编程环境](../notes/agent-code-intelligence-lsp-environment.md) |
@@ -49,6 +50,8 @@
 | Codex 浏览器开发者模式 | [OpenAI Codex Chrome extension docs](https://developers.openai.com/codex/app/chrome-extension) | 已沉淀成常青笔记，不进入 Skills 主推 | 浏览器调试能力应纳入自动化浏览路线，但产品能力不是单独 skill | [Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md) |
 
 更新补充：2026-06-12 再看 AIHot 的 Skills 相关条目，`qiaomu-ai-prd`、Spec 驱动 Skills、Replit Agent Skills、`baoyu-design`、Text-To-Lottie、Teach skill 共同指向同一个问题：skill 的价值不在于名字多，而在于触发边界、输入输出和验收方式清楚。这个方向已扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
+
+再次补充：Replit 2026-06-12 的 X 动态和官方博客，把“Agent 不记得偏好，所以用户反复解释项目结构和品牌规范”这个痛点讲得很清楚。这个方向已单独扩展成常青教程：[Agent 个性化分层](../notes/agent-custom-instructions-vs-skills.md)，强调一次性 Prompt、项目约定、Custom Instructions 和 Skills 的分工。
 
 再次更新：`qiaomu-ai-prd` 已核到公开 GitHub 仓库，并扩展成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)。这篇教程不搬运原始长提示词，而是提炼新手真正需要的结构：速读卡、核心循环、约束层、状态表、数据结构和验收剧本。
 
@@ -253,6 +256,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 新增 `digests/` 栏目，把 AIHot 新内容拆解和常青学习笔记分开。
 - 已把 Cursor Auto-review 方向扩展成常青教程：[Agent 自主权限分级清单](../notes/agent-autonomy-permission-ladder.md)。
 - 已把 Replit Skills / AIHot Skills 趋势扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
+- 已把 Replit Agent Customization 动态扩展成常青教程：[Agent 个性化分层](../notes/agent-custom-instructions-vs-skills.md)，提醒新手不要把所有长期偏好都塞进全局指令。
 - 已把 Spec 驱动开发方向扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
 - 已把 `qiaomu-ai-prd` 拆成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)，并加入 Skills 导览。
 - 已把 `qiaomu-goal-meta-skill` 拆成常青教程：[Codex Goal 指令怎么写](../notes/codex-goal-writing-template.md)，并补充可复制提示词：[Codex Goal 指令生成提示词](../prompts/codex-goal-command-template.md)。
@@ -277,7 +281,9 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 
 - [AIHot](https://aihot.virxact.com)
 - [Cursor Blog: Governing agent autonomy with Auto-review](https://cursor.com/blog/agent-autonomy-auto-review)
+- [Replit X: AI agents are powerful, but they don't remember your preferences](https://x.com/Replit/status/2065146579326271883)
 - [Replit Blog: Customize Replit Agent with Skills & Custom Instructions](https://replit.com/blog/custom-skills)
+- [Replit Docs: Agent Skills](https://docs.replit.com/references/agent/skills)
 - [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills)
 - [GitHub Spec Kit](https://github.com/github/spec-kit)
 - [qiaomu-ai-prd](https://github.com/joeseesun/qiaomu-ai-prd)

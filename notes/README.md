@@ -38,6 +38,7 @@
 | 21 | [Agent 新工具 / Skill 安装前审计清单：别被热榜带着装](agent-tool-skill-audit-checklist.md) | 经常在 AIHot、X、GitHub、公众号或朋友圈看到 Agent 工具 / skill 推荐，但不知道该不该安装的新手 | 把近期 Agent / skill 动态抽象成 12 项安装前审计表、三档处理规则、10 分钟试用流程和可复制审计提示词 | 通过 |
 | 22 | [Agent 编程环境：让 CLI Agent 真懂代码，而不是只会 grep](agent-code-intelligence-lsp-environment.md) | 已经让 CLI Agent 改代码，但经常遇到误读 API、乱猜类型、漏掉引用的新手 | 把 GitHub Copilot CLI + Language Server 官方文章和 Microsoft LSP 文档拆成代码语义环境检查表、AGENT_ENV 模板和环境发现提示词 | 通过 |
 | 23 | [Agent 运行日志与 Trace：别只看最终回答](agent-trace-observability-beginner.md) | 已经开始让 Agent 查网页、改文件、跑命令或操作浏览器，但不知道怎么验收结果的新手 | 把 OpenAI Agents SDK tracing、Agent improvement loop 和 Claude observability 资料拆成最小证据包、TRACE.md 模板和四类任务验收提示词 | 通过 |
+| 24 | [Agent 个性化分层：Custom Instructions、Skills 和一次性 Prompt 怎么分工](agent-custom-instructions-vs-skills.md) | 已经开始反复给 Agent 解释偏好、项目结构、代码风格、品牌规范或安全规则的新手 | 把 Replit Agent Customization 动态拆成一次性 Prompt、项目约定、Custom Instructions、Skills 四层决策表和可复制分层模板 | 通过 |
 
 ## 已下架内容
 
