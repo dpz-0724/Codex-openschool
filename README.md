@@ -4,7 +4,7 @@
 
 第一次来，先读：[从这里开始：AI Agent 新手导读](START_HERE.md)。
 
-当前版本先做一个完整入口，分成八块：
+当前版本先做一个完整入口，分成七块：
 
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
 - 实战练习：把路线、笔记和提示词拆成 7 个低风险小练习，读者可以直接照着做。
@@ -13,7 +13,6 @@
 - Skills 分享：全量审计后按专题主推 33 个真实 skills，不再为凑数混入标准、框架或普通工具。
 - 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、权限分级、代码审查、skills 触发边界、Spec 模板、AI 可执行 PRD、Goal 指令、长任务环境规格、实战和避坑。
 - 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
-- 传播素材：把最适合新手入门的内容整理成可复制短帖、长帖和标题备选，方便带来真实读者。
 
 所有内容都按“可公开、可复用、可注明来源”的标准整理。本仓库不会上传本地私有 skill 源码、真实聊天记录、账号后台、客户材料、密钥、个人路径或未脱敏截图。
 
@@ -66,12 +65,6 @@
 - 内容：Codex 自我进化、Codex Goal 指令、Agent 新手任务、Agent 审计、PPT 生产、技术内容创作、视觉提示词方法。
 - 标准：只保留能直接拿去执行、能说明使用边界的提示词。
 
-### 传播素材
-
-- 入口：[share/README.md](share/README.md)
-- 内容：面向小红书、公众号、X、朋友圈或社群的标题备选、短帖、长帖和发布记录表。
-- 标准：只传播已经审计过的公开内容，不夸大 Agent 能力，不展示隐私材料。
-
 ## 已展开资源导读
 
 - [从这里开始：AI Agent 新手导读](START_HERE.md)
@@ -110,10 +103,6 @@
 - [Codex Goal 指令生成提示词](prompts/codex-goal-command-template.md)
 - [AI 教程视觉提示词方法：参考宝玉 skills](prompts/visual-prompts-baoyu-skills.md)
 
-## 传播素材
-
-- [Codex OpenSchool 传播素材包](share/README.md)
-
 ## 收录原则
 
 1. 优先选择已经实际使用过、能解释清楚价值的内容。
@@ -121,12 +110,6 @@
 3. 本地内容只发布脱敏后的摘要、方法和模板。
 4. 涉及自动化浏览、账号登录、文件操作、发布内容等高风险场景时，必须注明边界和审核点。
 5. 作者或来源可确认时尽量标注；无法确认时明确写“本地整理”或“来源未见明确作者字段”。
-
-## 维护目标
-
-这个仓库按长期频道维护，不是一次性资料夹。阶段目标和更新规则见：[Codex OpenSchool 频道运营手册](CHANNEL_STRATEGY.md)。
-
-面向 500 Stars 的更新节奏、传播摘要和仓库元数据建议见：[500 Stars 增长维护手册](GROWTH_PLAYBOOK.md)。
 
 ## 贡献与反馈
 
@@ -145,9 +128,7 @@
 │   │   ├── content-suggestion.yml
 │   │   └── link-or-typo.yml
 │   └── PULL_REQUEST_TEMPLATE.md
-├── CHANNEL_STRATEGY.md
 ├── CONTRIBUTING.md
-├── GROWTH_PLAYBOOK.md
 ├── README.md
 ├── START_HERE.md
 ├── digests/
@@ -185,6 +166,4 @@
 │   ├── codex-self-evolution.md
 │   ├── high-value-prompts.md
 │   └── visual-prompts-baoyu-skills.md
-└── share/
-    └── README.md
 ```

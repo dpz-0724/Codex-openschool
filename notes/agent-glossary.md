@@ -88,7 +88,7 @@
 | Knowledge base | 被持续整理、索引和复用的知识集合 | 不是文件越多越好 | [个人知识库](personal-knowledge-base-agent-wiki.md) |
 | Index | 帮你快速找到笔记的目录或地图 | 没有索引，知识库会变成文件堆 | [个人知识库](personal-knowledge-base-agent-wiki.md) |
 | Source | 原始资料或证据链接 | 没有 source 的总结很难复查 | [第一个任务](first-agent-web-research-task.md) |
-| Audit | 对内容、来源、隐私、质量做检查 | 不是发布后再说 | [频道运营手册](../CHANNEL_STRATEGY.md) |
+| Audit | 对内容、来源、隐私、质量做检查 | 不是发布后再说 | [贡献规范](../CONTRIBUTING.md) |
 | Prompt template | 可复用的任务提示词模板 | 模板要有输入、输出和边界 | [提示词目录](../prompts/README.md) |
 
 ## 新手最该先记住的 10 个词

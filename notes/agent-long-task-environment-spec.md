@@ -251,7 +251,7 @@ OpenAI 在 2026-06-11 公告中也提到，长时间运行的 Codex 需要安全
 
 ## 2. 权限边界
 只读范围：仓库 Markdown 文件、公开网页、官方文档、论文摘要。
-可写范围：新增 notes/*.md，更新 README、notes/README.md、digests 或 GROWTH_PLAYBOOK。
+可写范围：新增 notes/*.md，更新 README、notes/README.md 或 digests/README.md。
 允许使用的工具：搜索、公开网页读取、git diff、Markdown 链接检查。
 允许运行的命令：git status、git diff、rg、链接检查脚本。
 禁止动作：读取密钥、聊天记录、账号后台、客户材料、本地私有路径。

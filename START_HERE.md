@@ -145,7 +145,6 @@
 - [Skills 分享目录](skills/README.md)
 - [提示词模板目录](prompts/README.md)
 - [AIHot 新鲜拆解](digests/README.md)
-- [传播素材包](share/README.md)
 
 ## 停止线
 
@@ -159,12 +158,7 @@
 
 先停下来，补 spec、补权限边界、补验收标准，再继续。
 
-## 这个仓库怎么持续更新
-
-维护规则见：
-
-- [频道运营手册](CHANNEL_STRATEGY.md)
-- [500 Stars 增长维护手册](GROWTH_PLAYBOOK.md)
+## 内容质量怎么保证
 
 新内容进入仓库前必须先过三关：
 
