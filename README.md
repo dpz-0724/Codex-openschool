@@ -2,13 +2,14 @@
 
 这里会持续分享我在使用 Codex、AI Agent、自动化工具和内容生产工作流时沉淀下来的公开材料。这个频道面向 AI Agent 新手，目标是帮助读者从“会问 AI”升级到“会让 Agent 做真实任务”。
 
-当前版本先做一个完整入口，分成五块：
+当前版本先做一个完整入口，分成六块：
 
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
 - 新鲜拆解：从 AIHot 和一手来源里提取近期 Agent 值得学的内容，不做热点搬运。
 - Skills 分享：全量审计后按专题主推 28 个真实 skills，不再为凑数混入标准、框架或普通工具。
 - 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、权限分级、skills 触发边界、Spec 模板、AI 可执行 PRD、长任务环境规格、实战和避坑。
 - 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
+- 传播素材：把最适合新手入门的内容整理成可复制短帖、长帖和标题备选，方便带来真实读者。
 
 所有内容都按“可公开、可复用、可注明来源”的标准整理。本仓库不会上传本地私有 skill 源码、真实聊天记录、账号后台、客户材料、密钥、个人路径或未脱敏截图。
 
@@ -48,6 +49,12 @@
 - 内容：Codex 自我进化、Agent 新手任务、Agent 审计、PPT 生产、技术内容创作、视觉提示词方法。
 - 标准：只保留能直接拿去执行、能说明使用边界的提示词。
 
+### 传播素材
+
+- 入口：[share/README.md](share/README.md)
+- 内容：面向小红书、公众号、X、朋友圈或社群的标题备选、短帖、长帖和发布记录表。
+- 标准：只传播已经审计过的公开内容，不夸大 Agent 能力，不展示隐私材料。
+
 ## 已展开笔记
 
 - [AI Agent 新手入门路线图：从会聊天到会让 Agent 做事](notes/agent-beginner-learning-path.md)
@@ -76,6 +83,10 @@
 - [Agent 新手任务提示词包：7 天完成第一个可验证闭环](prompts/agent-beginner-task-prompts.md)
 - [Codex 自我进化提示词](prompts/codex-self-evolution.md)
 - [AI 教程视觉提示词方法：参考宝玉 skills](prompts/visual-prompts-baoyu-skills.md)
+
+## 传播素材
+
+- [Codex OpenSchool 传播素材包](share/README.md)
 
 ## 收录原则
 
@@ -120,10 +131,12 @@
 │   ├── enterprise-agent-data-governance.md
 │   ├── enterprise-agent-harness.md
 │   └── personal-knowledge-base-agent-wiki.md
-└── prompts/
-    ├── README.md
-    ├── agent-beginner-task-prompts.md
-    ├── codex-self-evolution.md
-    ├── high-value-prompts.md
-    └── visual-prompts-baoyu-skills.md
+├── prompts/
+│   ├── README.md
+│   ├── agent-beginner-task-prompts.md
+│   ├── codex-self-evolution.md
+│   ├── high-value-prompts.md
+│   └── visual-prompts-baoyu-skills.md
+└── share/
+    └── README.md
 ```

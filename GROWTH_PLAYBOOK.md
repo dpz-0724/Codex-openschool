@@ -39,6 +39,18 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 - 每篇内容都能解决一个具体问题。
 - 有经验的读者能看出审计、取舍和边界。
 
+## AIHot 新内容处理规则
+
+AIHot 可以作为新选题雷达，但不能直接当成正文来源。每次看到很新的 Agent、skill、提示词或工具条目时，先按这个流程处理：
+
+1. 判断它是否解决新手真实问题，而不是只有产品更新或标题新鲜。
+2. 补官方博客、GitHub、论文、文档或作者主页等稳定公开入口。
+3. 提炼成一个方法主题，例如权限分级、skill 触发边界、spec、PRD、环境规格或内容生产流程。
+4. 只在能写出操作步骤、边界和验收标准时进入主推。
+5. 进入仓库后优先沉淀成常青笔记、提示词或 skills 导览，再放传播素材。
+
+不通过时只进入观察池，不写进 README 主入口。
+
 ## 每周维护节奏
 
 ### 周一：选题审计
@@ -129,6 +141,7 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 - 已把 AIHot 里的 `qiaomu-ai-prd` 拆成常青教程：[AI 可执行 PRD](notes/agent-executable-prd.md)。
 - 已把 AIHot 里的 EurekAgent 环境工程视角补进：[Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)。
 - 已把 EurekAgent / Ona 相关的长任务环境工程视角拆成可复制模板：[Agent 长任务环境规格模板](notes/agent-long-task-environment-spec.md)。
+- 已新增第一组传播素材：[Codex OpenSchool 传播素材包](share/README.md)，覆盖入门路线、第一个实战任务和长任务环境规格。
 
 ## 50-150 Stars 的重点任务
 
