@@ -205,6 +205,7 @@
 - 用 PPT Master 从资料生成一次课程 PPT。
 - 用 Playwright 做一次本地页面验收。
 - 用 Agent 做一次论文 / 技术文章精读。
+- 用 Agent 整理一篇公开网页并写成 Markdown 笔记。
 - 用 Agent 把学习笔记改成小红书图文。
 
 优先级 P2：
