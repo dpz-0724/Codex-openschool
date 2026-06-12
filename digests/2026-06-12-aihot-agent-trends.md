@@ -148,7 +148,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 
 | 条目 | 暂不主推原因 | 后续处理 |
 |---|---|---|
-| qiaomu-ai-prd：面向 AI 的 PRD 生成 Prompt | AIHot 条目来自 X，暂未核到稳定项目入口 | 等 GitHub 或文档入口确认后再拆 |
+| qiaomu-ai-prd：面向 AI 的 PRD 生成 Prompt | 已核到 GitHub 项目；这次只作为 Spec / PRD 方法旁证，不直接主推安装 | 后续可拆成“AI 可执行 PRD”专题，不搬运模板全文 |
 | Perplexity Computer 集成 Deep Research | 主要是产品能力更新，新手可操作细节不足 | 等官方文档或实测路径更清晰 |
 | Hermes Agent Desktop / Meoo CLI / WorkBuddy | 工具属性强，需要安装体验和边界验证 | 进入后续“工具实测”候选池 |
 
