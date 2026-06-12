@@ -12,6 +12,8 @@
 
 想直接做练习，可以打开：[Agent 新手低风险练习室](labs/README.md)。
 
+想回到官方一手资料，可以打开：[AI Agent 一手资源中文导读](resources/README.md)。
+
 ## 30 秒判断：你现在该读哪篇
 
 | 你现在的状态 | 先读 | 读完要做什么 |
@@ -135,6 +137,7 @@
 想直接找资源：
 
 - [低风险练习室](labs/README.md)
+- [一手资源中文导读](resources/README.md)
 - [学习笔记目录](notes/README.md)
 - [Skills 分享目录](skills/README.md)
 - [提示词模板目录](prompts/README.md)

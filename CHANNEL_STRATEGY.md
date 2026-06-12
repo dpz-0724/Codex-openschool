@@ -127,7 +127,23 @@
 - 不把只有社交媒体摘要、缺少稳定入口的条目当成事实主推。
 - 每条都说明为什么重要、新手怎么学、能落地到仓库哪里。
 
-### 6. 实战案例
+### 6. 一手资源导读
+
+目标：解决“官方资料很多，我该先读哪篇”的问题。
+
+内容形态：
+
+- OpenAI、Anthropic、Microsoft、MCP、GitHub 等一手资料阅读顺序。
+- 每篇资料的适合读者、阅读目标、可跳过部分和落地练习。
+- 官方概念和本仓库教程之间的映射。
+
+验收标准：
+
+- 不做链接堆。
+- 不复制长篇原文。
+- 每个资源都要对应一个新手问题和仓库内的笔记、提示词或练习。
+
+### 7. 实战案例
 
 目标：解决“学了之后能做什么”的问题。
 
@@ -250,6 +266,8 @@
 - [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)：用于参考课程化结构和 lesson 组织方式。
 - [Model Context Protocol 官方文档](https://modelcontextprotocol.io/docs/getting-started/intro)：用于解释 MCP 的定位、工具规范、授权和安全边界。
 - [Anthropic Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp)：用于解释工具过多时的上下文成本和按需调用思路。
+
+已展开的一手资源导读见：[AI Agent 一手资源中文导读](resources/README.md)。
 
 所有外部内容只做：
 
