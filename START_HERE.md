@@ -24,6 +24,7 @@
 | 已经开始让 Agent 调工具 | [Agent 工具调用选型](notes/agent-tooling-mcp-vs-cli.md) | 判断什么时候用 MCP、CLI、API、浏览器 |
 | 正在让 Codex 调试网页 | [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) | 分清 in-app browser、Chrome 扩展和 Developer mode |
 | 终端里反复让 Agent 做同一类任务 | [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) | 把一次性提示沉淀成可审计 workflow card |
+| Agent 说完成了，但你不知道它实际做了什么 | [Agent 运行日志与 Trace](notes/agent-trace-observability-beginner.md) | 学会检查来源、工具、产物、失败和验证证据 |
 | 看到一个新 Agent 工具 / skill 想安装 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) | 先判断来源、权限、密钥、输出和回滚 |
 | 让代码 Agent 改代码但它总是误读项目 | [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) | 先补 LSP、类型检查、测试和 git 边界 |
 | 担心 Agent 越权或乱操作 | [Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 给任务标 L0-L4 风险级别 |
@@ -64,7 +65,7 @@
 | Day 4 | 浏览器和软件操作 | [自动化浏览技术路线](notes/agent-automation-browser.md) + [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) + [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) | 判断任务适合 API、浏览器、Developer mode 还是桌面控制，并知道新工具该不该装 |
 | Day 5 | 权限和护栏 | [自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 一份 L0-L4 风险分级 |
 | Day 6 | 代码或产品交接 | [Goal 指令](notes/codex-goal-writing-template.md) + [10 行 Spec](notes/agent-coding-10-line-spec-template.md) + [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) + [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) + [AI 可执行 PRD](notes/agent-executable-prd.md) | 一个可验收、有边界的小需求规格或 workflow card |
-| Day 7 | 长任务和复盘 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) + [共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) | 一份可交给 Agent 执行的环境规格，一份可继承的共享上下文 |
+| Day 7 | 长任务和复盘 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) + [运行日志与 Trace](notes/agent-trace-observability-beginner.md) + [共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) | 一份可交给 Agent 执行的环境规格，一份可回放的证据包，一份可继承的共享上下文 |
 
 如果你只想先完成一个结果，Day 2 比 Day 1 更重要。先做，再回来看概念。
 
@@ -75,7 +76,8 @@
 1. [第一个 Agent 实战任务](notes/first-agent-web-research-task.md)
 2. [个人知识库搭建](notes/personal-knowledge-base-agent-wiki.md)
 3. [Agent 共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md)
-4. [Agent 新手任务提示词包](prompts/agent-beginner-task-prompts.md)
+4. [Agent 运行日志与 Trace](notes/agent-trace-observability-beginner.md)
+5. [Agent 新手任务提示词包](prompts/agent-beginner-task-prompts.md)
 
 重点：先做公开资料，不碰账号后台、聊天记录、客户材料和私有文件。
 
@@ -127,7 +129,7 @@
 | 看到热榜工具就直接安装 | 来源、权限、密钥和回滚方式不清楚 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) |
 | 让 Agent 只靠全文搜索理解代码 | 容易猜错类型、签名和引用关系 | [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) |
 | 把 skill 写成泛泛能力介绍 | 容易误触发或重复触发 | [Skill 触发边界](notes/skill-description-trigger-boundaries.md) |
-| 只看 Agent 总结，不看真实 diff 或产物 | 容易把“说完成了”当成完成 | [代码审查工作流](notes/agent-code-review-workflow.md) |
+| 只看 Agent 总结，不看来源、工具、diff 或产物 | 容易把“说完成了”当成完成 | [运行日志与 Trace](notes/agent-trace-observability-beginner.md) |
 | 让长任务无限跑 | 没有预算、停止条件和回放证据 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) |
 | 把长期协作都留在聊天记录里 | 换线程后容易丢失目标、决定和已验证事实 | [共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) |
 
@@ -149,10 +151,11 @@
 6. [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md)
 7. [权限分级清单](notes/agent-autonomy-permission-ladder.md)
 8. [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md)
-9. [Codex Goal 指令写法](notes/codex-goal-writing-template.md)
-10. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
-11. [AI 可执行 PRD](notes/agent-executable-prd.md)
-12. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
+9. [运行日志与 Trace](notes/agent-trace-observability-beginner.md)
+10. [Codex Goal 指令写法](notes/codex-goal-writing-template.md)
+11. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
+12. [AI 可执行 PRD](notes/agent-executable-prd.md)
+13. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
 
 想直接找资源：
 
