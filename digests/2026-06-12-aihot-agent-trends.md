@@ -156,12 +156,13 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 
 - 新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“工具选择、浏览边界、护栏、验收”做成可复制模板。
 - 新增 `digests/` 栏目，把 AIHot 新内容拆解和常青学习笔记分开。
+- 已把 Cursor Auto-review 方向扩展成常青教程：[Agent 自主权限分级清单](../notes/agent-autonomy-permission-ladder.md)。
 
 下一步优先级：
 
-1. 写一篇 `Agent 自主权限分级清单`，吸收 Cursor Auto-review 的方法。
-2. 写一篇 `Skill 描述怎么写才不误触发`，吸收 Replit 的 skill 触发边界。
-3. 写一篇 `Agent 编程前的 10 行 Spec 模板`，吸收 Spec 驱动开发思路。
+1. 写一篇 `Skill 描述怎么写才不误触发`，吸收 Replit 的 skill 触发边界。
+2. 写一篇 `Agent 编程前的 10 行 Spec 模板`，吸收 Spec 驱动开发思路。
+3. 扩展 [Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)，加入环境工程视角。
 
 ## 参考来源
 
