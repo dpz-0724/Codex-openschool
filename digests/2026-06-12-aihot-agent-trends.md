@@ -22,6 +22,7 @@
 7. 多轮或多 Agent 协作需要共享已验证上下文，而不是把所有历史塞进聊天记录。
 8. 终端里的重复任务应该沉淀成可审计 workflow card，而不是每次重写一次性提示词。
 9. 新工具 / skill 不应该看到热榜就安装，要先审计来源、权限、密钥、输出证据和回滚方式。
+10. 代码 Agent 准不准不只看提示词，还取决于 language server、类型检查、测试和 git 边界这些环境条件。
 
 本期已经落地到仓库的动作：新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“任务判断、工具选择、浏览边界、护栏、验收”做成可复制模板。
 
@@ -41,7 +42,8 @@
 | Replit Agent Skills | [Replit Blog](https://replit.com/blog/custom-skills) | 作为趋势来源，不单列 skill | Custom Instructions 是长期约定，Skills 是按任务加载的操作手册 | [Skill 触发边界](../notes/skill-description-trigger-boundaries.md) |
 | DeLM：Decentralized Multi-Agent Systems with Shared Context | [arXiv:2606.10662](https://arxiv.org/abs/2606.10662) | 已沉淀成常青笔记 | 长期协作需要共享已验证上下文、任务队列和紧凑更新，不能只依赖聊天历史 | [共享上下文与知识编译](../notes/agent-shared-context-knowledge-compile.md) |
 | GitHub Copilot CLI 自定义 Agent | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/) | 已沉淀成常青笔记，不进入 Skills 主推 | 终端里的“一次性提示”正在变成可复用 workflow；关键是最小工具、禁止动作、输出合同和停止条件 | [终端 Agent 可重复工作流](../notes/agent-terminal-workflow-card.md) |
-| GitHub Copilot CLI + Language Server、Claude Managed Agents、xAI Plugin Marketplace 等工具动态 | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers) / [Claude Blog](https://claude.com/blog/whats-new-in-claude-managed-agents) / [xAI News](https://x.ai/news/grok-plugin-marketplace) | 已沉淀成常青笔记，不逐个主推 | 看到新 Agent 工具时，先审计来源、权限、密钥、安装位置、输出证据和回滚方式 | [新工具 / Skill 安装前审计清单](../notes/agent-tool-skill-audit-checklist.md) |
+| GitHub Copilot CLI + Language Server | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers/) | 已沉淀成常青笔记 | CLI Agent 不能只靠 grep 理解代码；language server、类型检查、测试和 git 边界是稳定改代码的环境基础 | [Agent 编程环境](../notes/agent-code-intelligence-lsp-environment.md) |
+| Claude Managed Agents、xAI Plugin Marketplace 等工具动态 | [Claude Blog](https://claude.com/blog/whats-new-in-claude-managed-agents) / [xAI News](https://x.ai/news/grok-plugin-marketplace) | 已沉淀成常青笔记，不逐个主推 | 看到新 Agent 工具时，先审计来源、权限、密钥、安装位置、输出证据和回滚方式 | [新工具 / Skill 安装前审计清单](../notes/agent-tool-skill-audit-checklist.md) |
 | Codex 浏览器开发者模式 | [OpenAI Codex Chrome extension docs](https://developers.openai.com/codex/app/chrome-extension) | 已沉淀成常青笔记，不进入 Skills 主推 | 浏览器调试能力应纳入自动化浏览路线，但产品能力不是单独 skill | [Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md) |
 
 更新补充：2026-06-12 再看 AIHot 的 Skills 相关条目，`qiaomu-ai-prd`、Spec 驱动 Skills、Replit Agent Skills、`baoyu-design`、Text-To-Lottie、Teach skill 共同指向同一个问题：skill 的价值不在于名字多，而在于触发边界、输入输出和验收方式清楚。这个方向已扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
@@ -260,6 +262,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 DeLM 的共享已验证上下文思路，结合本地 notebook 方法笔记，拆成常青教程：[Agent 共享上下文与知识编译](../notes/agent-shared-context-knowledge-compile.md)。
 - 已把 GitHub Copilot CLI 自定义 Agent 的 workflow 思路，结合本地 Git / Claude Code 工作流笔记，拆成常青教程：[终端 Agent 可重复工作流](../notes/agent-terminal-workflow-card.md)。
 - 已把近期新工具 / skill 动态抽象成安装前审计方法：[Agent 新工具 / Skill 安装前审计清单](../notes/agent-tool-skill-audit-checklist.md)，避免读者被热榜带着装工具。
+- 已把 GitHub Copilot CLI + Language Server 的代码语义环境思路拆成常青教程：[Agent 编程环境](../notes/agent-code-intelligence-lsp-environment.md)，提醒新手先准备 LSP、类型检查、测试和 git 边界。
 
 下一步优先级：
 

@@ -36,6 +36,7 @@
 | 19 | [Codex 浏览器开发者模式：把网页调试变成可验证的 Agent 任务](codex-browser-developer-mode.md) | 已经开始用 Codex 预览、调试或修复网页，但分不清 Browser、Chrome 扩展和 Developer mode 的新手 | 把 AIHot 里的 Codex 浏览器开发者模式更新，结合 OpenAI 官方文档拆成使用判断表、调试流程、提示词和脱敏清单 | 通过 |
 | 20 | [Agent 共享上下文与知识编译：别把长期协作塞进聊天记录](agent-shared-context-knowledge-compile.md) | 已经让 Agent 连续做几轮任务，开始遇到上下文太长、结论丢失、换线程断片的新手 | 把本地 notebook 的上下文压缩、知识编译、每日小结方法，结合 DeLM 共享已验证上下文思路，整理成 `shared-context.md` 模板和入库验证流程 | 通过 |
 | 21 | [Agent 新工具 / Skill 安装前审计清单：别被热榜带着装](agent-tool-skill-audit-checklist.md) | 经常在 AIHot、X、GitHub、公众号或朋友圈看到 Agent 工具 / skill 推荐，但不知道该不该安装的新手 | 把近期 Agent / skill 动态抽象成 12 项安装前审计表、三档处理规则、10 分钟试用流程和可复制审计提示词 | 通过 |
+| 22 | [Agent 编程环境：让 CLI Agent 真懂代码，而不是只会 grep](agent-code-intelligence-lsp-environment.md) | 已经让 CLI Agent 改代码，但经常遇到误读 API、乱猜类型、漏掉引用的新手 | 把 GitHub Copilot CLI + Language Server 官方文章和 Microsoft LSP 文档拆成代码语义环境检查表、AGENT_ENV 模板和环境发现提示词 | 通过 |
 
 ## 已下架内容
 

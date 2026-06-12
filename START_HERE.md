@@ -25,6 +25,7 @@
 | 正在让 Codex 调试网页 | [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) | 分清 in-app browser、Chrome 扩展和 Developer mode |
 | 终端里反复让 Agent 做同一类任务 | [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) | 把一次性提示沉淀成可审计 workflow card |
 | 看到一个新 Agent 工具 / skill 想安装 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) | 先判断来源、权限、密钥、输出和回滚 |
+| 让代码 Agent 改代码但它总是误读项目 | [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) | 先补 LSP、类型检查、测试和 git 边界 |
 | 担心 Agent 越权或乱操作 | [Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 给任务标 L0-L4 风险级别 |
 | 让 Agent 写代码但 diff 不好审 | [Agent 代码审查工作流](notes/agent-code-review-workflow.md) | 建立动作前、提交前、PR 后三段式审查 |
 | 想把一句话任务交给 Codex 长时间执行 | [Codex Goal 指令写法](notes/codex-goal-writing-template.md) | 把模糊需求写成有验证、边界和暂停条件的 `/goal` |
@@ -62,7 +63,7 @@
 | Day 3 | 工具调用 | [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md) | 一张工具选型表 |
 | Day 4 | 浏览器和软件操作 | [自动化浏览技术路线](notes/agent-automation-browser.md) + [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) + [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) | 判断任务适合 API、浏览器、Developer mode 还是桌面控制，并知道新工具该不该装 |
 | Day 5 | 权限和护栏 | [自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 一份 L0-L4 风险分级 |
-| Day 6 | 代码或产品交接 | [Goal 指令](notes/codex-goal-writing-template.md) + [10 行 Spec](notes/agent-coding-10-line-spec-template.md) + [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) + [AI 可执行 PRD](notes/agent-executable-prd.md) | 一个可验收、有边界的小需求规格或 workflow card |
+| Day 6 | 代码或产品交接 | [Goal 指令](notes/codex-goal-writing-template.md) + [10 行 Spec](notes/agent-coding-10-line-spec-template.md) + [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) + [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) + [AI 可执行 PRD](notes/agent-executable-prd.md) | 一个可验收、有边界的小需求规格或 workflow card |
 | Day 7 | 长任务和复盘 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) + [共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) | 一份可交给 Agent 执行的环境规格，一份可继承的共享上下文 |
 
 如果你只想先完成一个结果，Day 2 比 Day 1 更重要。先做，再回来看概念。
@@ -82,9 +83,10 @@
 
 1. [Codex Goal 指令怎么写](notes/codex-goal-writing-template.md)
 2. [Agent 编程前的 10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
-3. [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md)
-4. [Agent 代码审查工作流](notes/agent-code-review-workflow.md)
-5. [AI 可执行 PRD](notes/agent-executable-prd.md)
+3. [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md)
+4. [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md)
+5. [Agent 代码审查工作流](notes/agent-code-review-workflow.md)
+6. [AI 可执行 PRD](notes/agent-executable-prd.md)
 
 重点：先写清目标、不变量和验收命令，再让 Agent 改文件。
 
@@ -123,6 +125,7 @@
 | 每次都复制一大段终端提示词 | 经验留在聊天里，工具边界和验收证据不稳定 | [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md) |
 | 把工具越多当成越强 | 工具越多，权限和错误面越大 | [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md) |
 | 看到热榜工具就直接安装 | 来源、权限、密钥和回滚方式不清楚 | [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md) |
+| 让 Agent 只靠全文搜索理解代码 | 容易猜错类型、签名和引用关系 | [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md) |
 | 把 skill 写成泛泛能力介绍 | 容易误触发或重复触发 | [Skill 触发边界](notes/skill-description-trigger-boundaries.md) |
 | 只看 Agent 总结，不看真实 diff 或产物 | 容易把“说完成了”当成完成 | [代码审查工作流](notes/agent-code-review-workflow.md) |
 | 让长任务无限跑 | 没有预算、停止条件和回放证据 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) |
@@ -143,12 +146,13 @@
 3. [第一个 Agent 实战任务](notes/first-agent-web-research-task.md)
 4. [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md)
 5. [新工具 / Skill 安装前审计清单](notes/agent-tool-skill-audit-checklist.md)
-6. [权限分级清单](notes/agent-autonomy-permission-ladder.md)
-7. [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md)
-8. [Codex Goal 指令写法](notes/codex-goal-writing-template.md)
-9. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
-10. [AI 可执行 PRD](notes/agent-executable-prd.md)
-11. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
+6. [Agent 编程环境](notes/agent-code-intelligence-lsp-environment.md)
+7. [权限分级清单](notes/agent-autonomy-permission-ladder.md)
+8. [终端 Agent 可重复工作流](notes/agent-terminal-workflow-card.md)
+9. [Codex Goal 指令写法](notes/codex-goal-writing-template.md)
+10. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
+11. [AI 可执行 PRD](notes/agent-executable-prd.md)
+12. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
 
 想直接找资源：
 

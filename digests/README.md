@@ -13,7 +13,7 @@
 
 | 日期 | 主题 | 价值 |
 |---|---|---|
-| 2026-06-12 | [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD、Goal 与环境工程](2026-06-12-aihot-agent-trends.md) | 从近期 Agent 动态提炼出新手能学的 9 个方法主题 |
+| 2026-06-12 | [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD、Goal 与环境工程](2026-06-12-aihot-agent-trends.md) | 从近期 Agent 动态提炼出新手能学的 10 个方法主题 |
 
 ## 处理流程
 
