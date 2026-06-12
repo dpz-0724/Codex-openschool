@@ -10,9 +10,9 @@
 
 结论：
 
-- 公开主推：33 个。
+- 公开主推：34 个。
 - 其中本地已安装或本地整理：21 个。
-- 外部公开且适合当前仓库定位：12 个。
+- 外部公开且适合当前仓库定位：13 个。
 - 不公开或待脱敏：本地账号、聊天记录、订单统计、项目专用、运行时密钥/路径、平台发布运营类 workflow。
 
 ## 收录标准
@@ -80,10 +80,11 @@
 | `motion-rich-tech-video-director` | 本地整理 | 把脚本拆成持续变化的画面和镜头节奏 | 适合避免 PPT 式静态视频，让观点对应视觉变化 | 不承诺工具做不到的镜头；最终要做画面验收 |
 | [`text-to-lottie`](https://github.com/diffusionstudio/lottie) | diffusionstudio；AIHot 发现；公开仓库已核 | 让 Agent 生成 Lottie / Bodymovin JSON，并用本地 Skottie harness 预览验收 | 价值不只是“生成动画”，而是把动效产物和浏览器验收闭环绑在一起 | 适合短时长矢量动效；不适合多镜头剪辑、复杂角色绑定、粒子或 3D |
 
-## 专题七：UI / 前端质量、上线与部署验证
+## 专题七：代码质量、UI / 前端质量、上线与部署验证
 
 | Skill | 来源 | 解决什么问题 | 为什么值得分享 | 公开边界 |
 |---|---|---|---|---|
+| [`open-code-review`](https://github.com/alibaba/open-code-review) | Alibaba；公开仓库已核 | 用专用 CLI / skill 对 Git diff 做 AI 代码审查，输出结构化、行级别 review comments | 适合把“让通用 Agent 看一眼 diff”升级成更稳定的审查工具链；仓库提供 CLI、Claude Code plugin、Codex plugin 和 skill 集成说明 | 需要本地配置 LLM endpoint / token；不要把密钥、私有代码或客户 diff 公开；自动审查只能做第二双眼，合并仍需负责人判断 |
 | `ui-ux-pro-max` | 本地整理；来源未见明确作者字段 | UI/UX 设计系统、配色、字体、交互、无障碍和质量检查 | 本地使用痕迹较多，适合做前端体验审计和设计决策 | 公开时只分享规则和方法，不复制内部数据表全集 |
 | [`baoyu-design`](https://github.com/JimLiu/baoyu-design) | JimLiu / 宝玉；AIHot 发现；公开仓库已核 | 本地设计 skill，可产出 UI mockup、prototype、wireframe、deck，并支持导入 Figma 设计系统 | 适合把“设计系统 + Agent 实现”做成可复用本地工作流 | Figma 文件、品牌资产、客户设计稿必须先确认授权和脱敏 |
 | `html-skill-benchmark` | 本地整理 | 对多个 HTML / 前端 / UI skills 做同题评测 | 适合判断哪个 skill 真能做出好页面，而不是只看描述 | 不公开参赛者私有输出或未授权素材 |
