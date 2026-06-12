@@ -250,14 +250,14 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 `qiaomu-goal-meta-skill` 拆成常青教程：[Codex Goal 指令怎么写](../notes/codex-goal-writing-template.md)，并补充可复制提示词：[Codex Goal 指令生成提示词](../prompts/codex-goal-command-template.md)。
 - 已把 EurekAgent 的环境工程视角补进常青教程：[Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)。
 - 已把“长任务环境规格”单独扩展成可复制模板：[Agent 长任务环境规格模板](../notes/agent-long-task-environment-spec.md)。
-- 已给 4 篇适合拉新手入门的内容补传播素材：[Codex OpenSchool 传播素材包](../share/README.md)。
+- 已把“学习笔记转成短帖”的方法放进低风险练习室，方便读者学习内容转译而不是直接照搬宣传文案。
 - 已把 Cursor Auto-review 和 Bugbot 更新合并沉淀成常青教程：[Agent 代码审查工作流](../notes/agent-code-review-workflow.md)。
 
 下一步优先级：
 
 1. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
 2. 继续观察 MiMo Code、GitHub Copilot CLI 自定义 Agent、Codex 浏览器开发者模式等终端型或产品型能力，只在能写出操作步骤、边界和验收时进入主推。
-3. 实际发布传播素材后，记录平台链接和读者反馈，保留能让新手看懂并愿意继续读的表达。
+3. 继续把近期热点拆成可复制的学习练习、提示词或判断表，而不是发布内部运营素材。
 
 ## 参考来源
 

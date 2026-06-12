@@ -4,6 +4,12 @@
 
 第一次来，先读：[从这里开始：AI Agent 新手导读](START_HERE.md)。
 
+如果只想先收藏三篇：
+
+1. [AI Agent 新手入门路线图](notes/agent-beginner-learning-path.md)：建立 7 天学习路线。
+2. [第一个 Agent 实战任务](notes/first-agent-web-research-task.md)：用公开网页跑通第一个低风险闭环。
+3. [Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md)：知道哪些事可以让 Agent 做，哪些必须停下来。
+
 当前版本先做一个完整入口，分成七块：
 
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
@@ -28,7 +34,7 @@
 ### 实战练习
 
 - 入口：[Agent 新手低风险练习室](labs/README.md)
-- 内容：任务分类、公开网页整理、工具选型、权限分级、10 行 Spec、提交前审查和传播短帖。
+- 内容：任务分类、公开网页整理、工具选型、权限分级、10 行 Spec、提交前审查和分享短帖。
 - 标准：每个练习都有输入、步骤、产物和通过标准；不登录账号，不处理未脱敏材料。
 
 ### 一手资源导读

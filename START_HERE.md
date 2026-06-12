@@ -1,6 +1,6 @@
 # 从这里开始：AI Agent 新手导读
 
-这页是 Codex OpenSchool 的新手入口。仓库内容会继续增长，但第一次来不需要从头读完所有文件。
+这页是 Codex OpenSchool 的新手入口。内容会继续增加，但第一次来不需要从头读完所有文件。
 
 如果你只想先跑通一个低风险闭环，按这条路线走：
 
@@ -94,7 +94,7 @@
 
 1. [Codex + PPT Master 工作流](notes/codex-ppt-master-workflow.md)
 2. [AI 教程视觉提示词方法](prompts/visual-prompts-baoyu-skills.md)
-3. [传播素材包](share/README.md)
+3. [Agent 新手低风险练习室：把笔记改成短帖](labs/README.md)
 
 重点：内容生产也要保留来源、边界和审核点，不要把未脱敏材料拿来展示。
 
