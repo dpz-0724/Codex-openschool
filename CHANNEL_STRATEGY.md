@@ -194,6 +194,7 @@
 - 第一个 Agent 自动化浏览任务。
 - Agent、Workflow、RPA、脚本、Chatbot 的区别。
 - 什么是工具调用：Data / Action / Orchestration。
+- Skill、MCP、CLI、API、浏览器自动化的边界辨析。
 - MCP vs CLI 工具调用选型：不要为了协议牺牲任务闭环。
 - 上下文工程入门：为什么不是提示词越长越好。
 - Skills 怎么用：为什么它是 Agent 的操作手册。

@@ -119,7 +119,7 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 - 补齐 10 篇以内高质量入门笔记，不追数量。
 - 新增“第一个 Agent 任务”实战案例。
 - 为每篇笔记补一段“适合谁 / 读完能做什么”。
-- 建立 FAQ：Agent、Workflow、Skill、MCP、CLI、RPA 的区别。
+- 已建立基础 FAQ：[AI Agent 新手概念 FAQ](notes/agent-concepts-faq.md)。后续继续补“第一个 Agent 任务”实战案例。
 
 ## 50-150 Stars 的重点任务
 
