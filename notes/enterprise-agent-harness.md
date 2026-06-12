@@ -81,6 +81,146 @@ Enterprise Agent Harness =
 
 Harness 就是在这 12 步外面加控制系统。
 
+## 环境工程：长任务 Agent 先设计环境，再设计聪明程度
+
+AIHot 里提到的 EurekAgent 给这篇笔记补了一个重要视角：长任务 Agent 的瓶颈不只是 prompt、模型或 agent loop，而是环境。
+
+这里的环境不是“部署在哪台机器”，而是 Agent 能看到什么、能改什么、必须留下什么、花费多少、什么时候让人介入。对新手来说，可以把环境工程理解成：
+
+```text
+Environment Engineering =
+  Permission Engineering
+  + Artifact Engineering
+  + Budget Engineering
+  + Human-in-the-Loop Engineering
+```
+
+这四件事应该在 Agent 开始长期任务前写清楚，而不是等它跑偏以后再补救。
+
+### 1. Permission Engineering：权限工程
+
+权限工程回答：
+
+- Agent 能读哪些目录、网页、数据库或 API？
+- Agent 能写哪些文件？
+- 哪些工具只能 dry-run？
+- 哪些动作必须人工确认？
+- 评测环境是否和真实环境隔离？
+
+新手最小写法：
+
+```text
+只读范围：
+可写范围：
+禁止动作：
+必须确认：
+隔离方式：
+```
+
+如果这几行写不出来，就不要让 Agent 做长时间自主执行。
+
+### 2. Artifact Engineering：产物工程
+
+产物工程回答：
+
+- Agent 每一步留下什么文件或记录？
+- 最终结果是不是可复查，而不是只存在聊天窗口里？
+- 中间方案、失败原因、验证结果有没有保存？
+- 能不能用 Git、diff、日志或报告还原过程？
+
+一个能交付的 Agent 任务至少应该留下：
+
+| 产物 | 作用 |
+|---|---|
+| `PLAN.md` 或任务计划 | 说明准备怎么做 |
+| `TRACE.md` 或运行摘要 | 说明实际做了什么 |
+| 输出文件 | 给用户真正使用的结果 |
+| 验收记录 | 证明结果符合要求 |
+| 失败样例 | 下次回归测试用 |
+
+不要把“Agent 说它做完了”当成产物。文件、链接、截图、命令输出和可复查 diff 才是产物。
+
+### 3. Budget Engineering：预算工程
+
+预算工程回答：
+
+- 这次最多跑多久？
+- 最多调用多少次工具？
+- 最多花多少 token 或 API 成本？
+- 找不到结果时什么时候停止？
+- 探索失败后是否允许换路径？
+
+预算不是只为了省钱，更是为了防止 Agent 在错误方向上无限探索。
+
+新手可以给每个长任务加一个预算块：
+
+```text
+最长时间：
+最多工具调用：
+最多网页/文件读取：
+最大费用：
+停止条件：
+升级给人的条件：
+```
+
+### 4. Human-in-the-Loop Engineering：人在回路工程
+
+人在回路不是“每一步都问我”，而是把人工介入点设计得低摩擦、可审计、能真正降低风险。
+
+应该人工介入的情况：
+
+- 要发布、提交、删除、付款、发消息。
+- 要读取或处理未脱敏数据。
+- 发现任务目标和现有事实冲突。
+- 预算快耗尽但还没有证据。
+- Agent 想扩大范围。
+- 失败样例影响后续判断。
+
+好的人工介入请求应该包含：
+
+```text
+当前进展：
+遇到的问题：
+可选方案：
+每个方案的风险：
+我建议的下一步：
+需要你确认的动作：
+```
+
+这比一句“要继续吗？”更有价值。
+
+## 环境规格模板
+
+在让 Agent 跑一个超过 30 分钟、会改文件、会调用工具或会产生业务副作用的任务前，可以先写这张环境规格：
+
+```text
+任务目标：
+只读范围：
+可写范围：
+禁止动作：
+必须人工确认：
+每步必须留下的产物：
+最终交付物：
+预算上限：
+停止条件：
+失败后如何回放：
+```
+
+这张表和前面的 Harness 模块是对应的：
+
+| 环境规格 | 对应 Harness 模块 |
+|---|---|
+| 只读范围 / 可写范围 / 禁止动作 | Sandbox / Permission, Tool Governance |
+| 必须人工确认 | Guardrails / Human Approval |
+| 每步必须留下的产物 | State / Memory / Event Log, Trace / Replay |
+| 最终交付物 | Observability / Reports |
+| 预算上限 / 停止条件 | Runtime Control, Release Gates |
+| 失败后如何回放 | Eval / Golden Cases, Trace / Replay |
+
+如果你只记住一句话，就是：
+
+> 长任务 Agent 不要先问“模型够不够聪明”，先问“环境有没有把正确行为变容易，把危险行为变困难”。
+
 ## 十大模块
 
 ### 1. Runtime Control：运行控制
@@ -413,3 +553,9 @@ Enterprise Agent Harness 的本质不是某个框架，也不是某个模型 API
 ```
 
 真正要学会的不是“会不会写 Agent”，而是如何把 Agent 从 Demo 变成可交付系统。
+
+## 参考来源
+
+- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec 与环境工程](../digests/2026-06-12-aihot-agent-trends.md)
+- [EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery](https://arxiv.org/abs/2606.13662)
+- [Hugging Face Papers: EurekAgent](https://huggingface.co/papers/2606.13662)

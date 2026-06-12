@@ -38,7 +38,7 @@
 
 - 数量：13 篇已成文、已脱敏、可直接阅读的公开笔记。
 - 入口：[notes/README.md](notes/README.md)
-- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、MCP vs CLI 工具调用选型、Agent 自主权限分级、Skill 触发边界、Agent 编程前 Spec 模板、Enterprise Agent Harness、企业数据治理、PPT Master 工作流、个人知识库搭建。
+- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、MCP vs CLI 工具调用选型、Agent 自主权限分级、Skill 触发边界、Agent 编程前 Spec 模板、Enterprise Agent Harness 与环境工程、企业数据治理、PPT Master 工作流、个人知识库搭建。
 - 标准：先有正文，再进入目录；没有正文的选题只留在本地待办。
 
 ### 提示词模板

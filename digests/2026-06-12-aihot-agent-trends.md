@@ -141,7 +141,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 
 ### 可落地内容
 
-- 后续可扩展 [Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)，加入环境工程视角。
+- 已扩展 [Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)，加入环境工程视角。
 - 对新手练习来说，先在低风险 Markdown 任务里练“产物和自检”，不要直接做长期自主执行。
 
 ## 观察中：暂不主推的条目
@@ -161,12 +161,13 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 Cursor Auto-review 方向扩展成常青教程：[Agent 自主权限分级清单](../notes/agent-autonomy-permission-ladder.md)。
 - 已把 Replit Skills / AIHot Skills 趋势扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
 - 已把 Spec 驱动开发方向扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
+- 已把 EurekAgent 的环境工程视角补进常青教程：[Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)。
 
 下一步优先级：
 
-1. 扩展 [Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)，加入环境工程视角。
-2. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
-3. 继续观察 `qiaomu-ai-prd` 一类 AI PRD skills，把可复用部分拆成“AI 可执行 PRD”专题，不直接搬运模板全文。
+1. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
+2. 继续观察 `qiaomu-ai-prd` 一类 AI PRD skills，把可复用部分拆成“AI 可执行 PRD”专题，不直接搬运模板全文。
+3. 从本地和公开资料里补一篇“Agent 长任务环境规格模板”，把权限、产物、预算、人在回路做成可复制清单。
 
 ## 参考来源
 

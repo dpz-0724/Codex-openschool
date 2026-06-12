@@ -126,6 +126,7 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 - 已把 AIHot 里的 Cursor Auto-review 方向沉淀成常青教程：[Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md)。
 - 已把 AIHot 里的 Skills 趋势沉淀成常青教程：[Skill 描述怎么写才不误触发](notes/skill-description-trigger-boundaries.md)。
 - 已把 AIHot 里的 Spec 驱动开发趋势沉淀成常青教程：[Agent 编程前的 10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)。
+- 已把 AIHot 里的 EurekAgent 环境工程视角补进：[Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)。
 
 ## 50-150 Stars 的重点任务
 
