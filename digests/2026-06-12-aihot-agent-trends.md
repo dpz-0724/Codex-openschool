@@ -1,4 +1,4 @@
-# AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD 与环境工程
+# AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD、Goal 与环境工程
 
 ## 审计信息
 
@@ -11,13 +11,14 @@
 
 ## 本期结论
 
-这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 5 个方法主题：
+这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 6 个方法主题：
 
 1. Agent 自主性需要按风险分层，而不是只有“全自动 / 每步确认”两个档位。
 2. Skills 正在变成团队约定和任务方法的载体，关键是触发边界要写清楚。
 3. Spec 驱动开发在 Agent 编程里继续升温，因为它能把“先想清楚再实现”固定成流程。
 4. AI 可执行 PRD 的价值是让 Agent 少猜：把核心循环、约束层、状态和验收剧本写清楚。
-5. 长任务 Agent 的瓶颈不只是提示词，而是环境：权限、产物、预算、人工介入。
+5. `/goal` 的价值是把模糊任务收口成目标、验证、边界和暂停条件。
+6. 长任务 Agent 的瓶颈不只是提示词，而是环境：权限、产物、预算、人工介入。
 
 本期已经落地到仓库的动作：新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“任务判断、工具选择、浏览边界、护栏、验收”做成可复制模板。
 
@@ -30,6 +31,7 @@
 | 小互开源公众号自动排版技能组合 | [xiaohu-wechat-format](https://github.com/xiaohuailabs/xiaohu-wechat-format) | 进入 Skills 主推 | 内容发布 skill 不能只讲“一键发布”，必须把排版预览、封面、草稿箱推送和人工确认拆开 | [Skills 专题导览](../skills/README.md) |
 | qiaomu-ai-prd | [joeseesun/qiaomu-ai-prd](https://github.com/joeseesun/qiaomu-ai-prd) | 已进入主推并沉淀成笔记 | PRD 要写给 Agent 执行和验收，不是只给人读 | [AI 可执行 PRD](../notes/agent-executable-prd.md) |
 | Spec 驱动开发三个 Skills | [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills) | 进入 Skills 主推 | 大任务先写 Product Spec / Tech Spec / Verify，减少 Agent 猜测空间 | [10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md) |
+| Codex Goal 指令生成 Skill | [joeseesun/qiaomu-goal-meta-skill](https://github.com/joeseesun/qiaomu-goal-meta-skill) | 进入 Skills 主推并沉淀成笔记和提示词 | 长任务开工前先写目标、验证、边界和暂停条件，减少跑偏和越权 | [Goal 指令写法](../notes/codex-goal-writing-template.md) |
 | Text-To-Lottie | [diffusionstudio/lottie](https://github.com/diffusionstudio/lottie) | 进入 Skills 主推 | 好 skill 不只生成文件，还要有本地预览、定位帧和验收闭环 | [Skills 专题导览](../skills/README.md) |
 | baoyu-design 更新 | [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) | 进入 Skills 主推 | 设计类 skill 的关键是复用设计系统，同时保护 Figma 文件和品牌资产 | [Skills 专题导览](../skills/README.md) |
 | Cursor Auto-review | [Cursor Blog](https://cursor.com/blog/agent-autonomy-auto-review) | 已沉淀成常青笔记 | Agent 自主权限要按风险分层，而不是二选一 | [权限分级清单](../notes/agent-autonomy-permission-ladder.md) |
@@ -164,6 +166,38 @@ Verify：实现是否真的匹配前两份 spec。
 - 已扩展成常青教程：[AI 可执行 PRD：把一句话需求写成 Agent 能实现的产品规格](../notes/agent-executable-prd.md)。
 - 已把 `qiaomu-ai-prd` 放入 [Skills 专题导览](../skills/README.md)，标注为外部公开 skill，并注明不复制原始长提示词。
 
+## 3.6 qiaomu-goal-meta-skill：/goal 是任务合同，不是愿望清单
+
+- AIHot 条目：Codex Goal 指令生成 Skill 发布。
+- 稳定入口：[joeseesun/qiaomu-goal-meta-skill](https://github.com/joeseesun/qiaomu-goal-meta-skill)
+- 适合谁：经常把一句模糊需求交给 Codex，结果发现任务跑偏、无法验收或不知道何时该停的新手。
+
+### 提炼
+
+`qiaomu-goal-meta-skill` 的价值在于把“帮我做个东西”改写成更像任务合同的 `/goal`：目标结果、验证证据、约束、写入边界、迭代策略、完成条件和暂停条件都要写清楚。
+
+这和 PRD / Spec 的关系很直接：PRD 适合产品规格，Spec 适合开发约束，而 `/goal` 是把这次交给 Agent 执行的任务收口。
+
+### 新手可以怎么学
+
+任何长任务开工前先补 5 行：
+
+```text
+/goal [最终产物]
+验证：[证据]
+约束：[不做什么]
+边界：[能改哪里]
+暂停条件：[何时问人]
+```
+
+如果这 5 行写不出来，通常说明任务还没准备好交给 Agent 自主执行。
+
+### 可落地内容
+
+- 已扩展成常青教程：[Codex Goal 指令怎么写：把模糊需求变成可执行目标](../notes/codex-goal-writing-template.md)。
+- 已新增可复制提示词：[Codex Goal 指令生成提示词](../prompts/codex-goal-command-template.md)。
+- 已加入 [Skills 专题导览](../skills/README.md)，标注原作者和公开仓库。
+
 ## 4. EurekAgent：长任务 Agent 的关键是环境工程
 
 - AIHot 条目：EurekAgent 环境工程化实现自主科学发现。
@@ -213,6 +247,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 Replit Skills / AIHot Skills 趋势扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
 - 已把 Spec 驱动开发方向扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
 - 已把 `qiaomu-ai-prd` 拆成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)，并加入 Skills 导览。
+- 已把 `qiaomu-goal-meta-skill` 拆成常青教程：[Codex Goal 指令怎么写](../notes/codex-goal-writing-template.md)，并补充可复制提示词：[Codex Goal 指令生成提示词](../prompts/codex-goal-command-template.md)。
 - 已把 EurekAgent 的环境工程视角补进常青教程：[Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)。
 - 已把“长任务环境规格”单独扩展成可复制模板：[Agent 长任务环境规格模板](../notes/agent-long-task-environment-spec.md)。
 - 已给 4 篇适合拉新手入门的内容补传播素材：[Codex OpenSchool 传播素材包](../share/README.md)。

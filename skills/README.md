@@ -10,9 +10,9 @@
 
 结论：
 
-- 公开主推：32 个。
+- 公开主推：33 个。
 - 其中本地已安装或本地整理：21 个。
-- 外部公开且适合当前仓库定位：11 个。
+- 外部公开且适合当前仓库定位：12 个。
 - 不公开或待脱敏：本地账号、聊天记录、订单统计、项目专用、运行时密钥/路径、平台发布运营类 workflow。
 
 ## 收录标准
@@ -96,6 +96,7 @@
 |---|---|---|---|---|
 | [`warpdotdev/common-skills`](https://github.com/warpdotdev/common-skills) | Warp；AIHot 发现；公开仓库已核 | 用 `write-product-spec`、`write-tech-spec`、`validate-changes-match-specs` 支撑 Spec -> Implement -> Verify 闭环 | 适合新手理解为什么 Agent 编程要先写行为、不变量和验收，再进入实现 | 不是所有小改动都需要完整 SDD；跨模块、大范围或高歧义任务才值得启用 |
 | [`qiaomu-ai-prd`](https://github.com/joeseesun/qiaomu-ai-prd) | 向阳乔木 / joeseesun；AIHot 发现；公开仓库已核 | 把一句话产品想法整理成 AI 编程助手能执行的 PRD | 适合新手学习“速读卡、约束层、优先级、状态、数据结构、验收剧本”这些 Agent 交接要素 | 推荐公开仓库和方法，不复制原始长提示词；涉及真实业务、账号、支付、用户数据时必须人工审核 |
+| [`qiaomu-goal-meta-skill`](https://github.com/joeseesun/qiaomu-goal-meta-skill) | 向阳乔木 / joeseesun；AIHot 发现；公开仓库已核 | 把模糊需求改写成 Codex 可执行的 `/goal`，补齐验证、约束、边界、迭代和暂停条件 | 适合新手在长任务开工前先写“任务合同”，减少跑偏、越界和无法验收 | 推荐方法和公开仓库，不复制原始长提示词；账号、支付、生产、版权和隐私任务必须人工确认 |
 
 ## 候选但暂不公开主推
 

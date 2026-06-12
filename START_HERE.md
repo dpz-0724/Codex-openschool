@@ -24,6 +24,7 @@
 | 已经开始让 Agent 调工具 | [Agent 工具调用选型](notes/agent-tooling-mcp-vs-cli.md) | 判断什么时候用 MCP、CLI、API、浏览器 |
 | 担心 Agent 越权或乱操作 | [Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 给任务标 L0-L4 风险级别 |
 | 让 Agent 写代码但 diff 不好审 | [Agent 代码审查工作流](notes/agent-code-review-workflow.md) | 建立动作前、提交前、PR 后三段式审查 |
+| 想把一句话任务交给 Codex 长时间执行 | [Codex Goal 指令写法](notes/codex-goal-writing-template.md) | 把模糊需求写成有验证、边界和暂停条件的 `/goal` |
 | 想把一句话需求交给 Agent 实现 | [AI 可执行 PRD](notes/agent-executable-prd.md) | 写出约束层、状态表和验收剧本 |
 | 想让 Agent 跑 30 分钟以上任务 | [Agent 长任务环境规格模板](notes/agent-long-task-environment-spec.md) | 先圈定环境、权限、预算和停止条件 |
 
@@ -57,7 +58,7 @@
 | Day 3 | 工具调用 | [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md) | 一张工具选型表 |
 | Day 4 | 浏览器和软件操作 | [自动化浏览技术路线](notes/agent-automation-browser.md) | 判断任务适合 API、浏览器还是桌面控制 |
 | Day 5 | 权限和护栏 | [自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 一份 L0-L4 风险分级 |
-| Day 6 | 代码或产品交接 | [10 行 Spec](notes/agent-coding-10-line-spec-template.md) + [AI 可执行 PRD](notes/agent-executable-prd.md) | 一个可验收的小需求规格 |
+| Day 6 | 代码或产品交接 | [Goal 指令](notes/codex-goal-writing-template.md) + [10 行 Spec](notes/agent-coding-10-line-spec-template.md) + [AI 可执行 PRD](notes/agent-executable-prd.md) | 一个可验收、有边界的小需求规格 |
 | Day 7 | 长任务和复盘 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) | 一份可交给 Agent 执行的环境规格 |
 
 如果你只想先完成一个结果，Day 2 比 Day 1 更重要。先做，再回来看概念。
@@ -74,9 +75,10 @@
 
 ### 我想学会让 Agent 写代码
 
-1. [Agent 编程前的 10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
-2. [Agent 代码审查工作流](notes/agent-code-review-workflow.md)
-3. [AI 可执行 PRD](notes/agent-executable-prd.md)
+1. [Codex Goal 指令怎么写](notes/codex-goal-writing-template.md)
+2. [Agent 编程前的 10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
+3. [Agent 代码审查工作流](notes/agent-code-review-workflow.md)
+4. [AI 可执行 PRD](notes/agent-executable-prd.md)
 
 重点：先写清目标、不变量和验收命令，再让 Agent 改文件。
 
@@ -109,7 +111,7 @@
 | 坑 | 为什么危险 | 先看 |
 |---|---|---|
 | 一上来就让 Agent 登录账号或自动发布 | 失败后可能影响真实外部系统 | [权限分级清单](notes/agent-autonomy-permission-ladder.md) |
-| 只让 Agent “看着办” | 目标、边界、产物都不清楚 | [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md) |
+| 只让 Agent “看着办” | 目标、边界、产物都不清楚 | [Goal 指令写法](notes/codex-goal-writing-template.md) |
 | 把工具越多当成越强 | 工具越多，权限和错误面越大 | [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md) |
 | 把 skill 写成泛泛能力介绍 | 容易误触发或重复触发 | [Skill 触发边界](notes/skill-description-trigger-boundaries.md) |
 | 只看 Agent 总结，不看真实 diff 或产物 | 容易把“说完成了”当成完成 | [代码审查工作流](notes/agent-code-review-workflow.md) |
@@ -130,9 +132,10 @@
 3. [第一个 Agent 实战任务](notes/first-agent-web-research-task.md)
 4. [MCP vs CLI](notes/agent-tooling-mcp-vs-cli.md)
 5. [权限分级清单](notes/agent-autonomy-permission-ladder.md)
-6. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
-7. [AI 可执行 PRD](notes/agent-executable-prd.md)
-8. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
+6. [Codex Goal 指令写法](notes/codex-goal-writing-template.md)
+7. [10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)
+8. [AI 可执行 PRD](notes/agent-executable-prd.md)
+9. [长任务环境规格模板](notes/agent-long-task-environment-spec.md)
 
 想直接找资源：
 

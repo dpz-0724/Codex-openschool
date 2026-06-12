@@ -20,7 +20,7 @@ https://github.com/dpz-0724/Codex-openschool
 1. 不承诺“全自动赚钱”“替代人类”“一键完成所有工作”。
 2. 不展示账号后台、聊天记录、客户材料、密钥、本地路径或未脱敏截图。
 3. 不搬运外部文章原文，只发自己的学习路线、模板和方法。
-4. 每次传播只讲一个具体问题，不把 16 篇笔记一次性全塞给读者。
+4. 每次传播只讲一个具体问题，不把 17 篇笔记一次性全塞给读者。
 5. 发布后记录链接和 Star 变化，判断什么内容真的有效。
 
 ## 仓库一句话介绍
@@ -354,11 +354,12 @@ https://github.com/dpz-0724/Codex-openschool
 - Skill 触发边界教程
 - AI Agent 一手资源中文导读
 - AI 可执行 PRD 模板
+- Codex Goal 指令写法
 - 长任务 Agent 环境规格模板
 - PPT Master 工作流
 - 个人知识库搭建笔记
 - 高价值提示词模板
-- 32 个审计后的 skills 导览
+- 33 个审计后的 skills 导览
 
 所有内容都按公开、脱敏、可复用的标准整理。
 
@@ -385,4 +386,5 @@ https://github.com/dpz-0724/Codex-openschool
 - MCP vs CLI：不要为了协议牺牲任务闭环。
 - Skill 描述怎么写才不误触发。
 - AI 可执行 PRD：让 Agent 少猜。
+- Codex Goal 指令：把模糊需求变成可执行任务。
 - Codex + PPT Master：资料到课程 PPT 的稳定流程。

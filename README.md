@@ -10,8 +10,8 @@
 - 实战练习：把路线、笔记和提示词拆成 7 个低风险小练习，读者可以直接照着做。
 - 一手资源：把 OpenAI、Anthropic、Microsoft、MCP 和 GitHub 等官方资料整理成中文导读，告诉新手先读哪篇。
 - 新鲜拆解：从 AIHot 和一手来源里提取近期 Agent 值得学的内容，不做热点搬运。
-- Skills 分享：全量审计后按专题主推 32 个真实 skills，不再为凑数混入标准、框架或普通工具。
-- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、权限分级、代码审查、skills 触发边界、Spec 模板、AI 可执行 PRD、长任务环境规格、实战和避坑。
+- Skills 分享：全量审计后按专题主推 33 个真实 skills，不再为凑数混入标准、框架或普通工具。
+- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、权限分级、代码审查、skills 触发边界、Spec 模板、AI 可执行 PRD、Goal 指令、长任务环境规格、实战和避坑。
 - 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
 - 传播素材：把最适合新手入门的内容整理成可复制短帖、长帖和标题备选，方便带来真实读者。
 
@@ -40,7 +40,7 @@
 
 ### Skills 分享
 
-- 数量：32 个审计后保留的真实 skills。
+- 数量：33 个审计后保留的真实 skills。
 - 入口：[skills/README.md](skills/README.md)
 - 内容：自动化浏览、AI 资讯、内容入库、图文发布、PPT/文档、科研学术、视频脚本、UI/前端、PRD/Agent 交接和部署验证。
 - 标准：只收录具体可用的 skill 或明确外部项目，不把普通方法论、标准或重复能力凑成条目。
@@ -54,16 +54,16 @@
 
 ### 学习笔记
 
-- 数量：16 篇已成文、已脱敏、可直接阅读的公开笔记。
+- 数量：17 篇已成文、已脱敏、可直接阅读的公开笔记。
 - 入口：[notes/README.md](notes/README.md)
-- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、MCP vs CLI 工具调用选型、Agent 自主权限分级、Agent 代码审查工作流、Skill 触发边界、Agent 编程前 Spec 模板、AI 可执行 PRD、Agent 长任务环境规格、Enterprise Agent Harness 与环境工程、企业数据治理、PPT Master 工作流、个人知识库搭建。
+- 内容：Agent 新手路线、新手术语表、核心概念 FAQ、第一个 Agent 实战任务、自动化浏览、MCP vs CLI 工具调用选型、Agent 自主权限分级、Agent 代码审查工作流、Skill 触发边界、Agent 编程前 Spec 模板、AI 可执行 PRD、Codex Goal 指令、Agent 长任务环境规格、Enterprise Agent Harness 与环境工程、企业数据治理、PPT Master 工作流、个人知识库搭建。
 - 标准：先有正文，再进入目录；没有正文的选题只留在本地待办。
 
 ### 提示词模板
 
-- 数量：11 个可用入口，其中包含 8 个精选模板和 3 个已展开专题提示词。
+- 数量：12 个可用入口，其中包含 8 个精选模板和 4 个已展开专题提示词。
 - 入口：[prompts/README.md](prompts/README.md)
-- 内容：Codex 自我进化、Agent 新手任务、Agent 审计、PPT 生产、技术内容创作、视觉提示词方法。
+- 内容：Codex 自我进化、Codex Goal 指令、Agent 新手任务、Agent 审计、PPT 生产、技术内容创作、视觉提示词方法。
 - 标准：只保留能直接拿去执行、能说明使用边界的提示词。
 
 ### 传播素材
@@ -91,6 +91,7 @@
 - [Skill 描述怎么写才不误触发：description 是触发器，不是宣传语](notes/skill-description-trigger-boundaries.md)
 - [Agent 编程前的 10 行 Spec 模板：先把需求写成可验收任务](notes/agent-coding-10-line-spec-template.md)
 - [AI 可执行 PRD：把一句话需求写成 Agent 能实现的产品规格](notes/agent-executable-prd.md)
+- [Codex Goal 指令怎么写：把模糊需求变成可执行目标](notes/codex-goal-writing-template.md)
 - [Agent 长任务环境规格模板：先圈环境，再让 Agent 自主跑](notes/agent-long-task-environment-spec.md)
 - [Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)
 - [企业 Agent 数据治理与自助分析落地手册](notes/enterprise-agent-data-governance.md)
@@ -99,13 +100,14 @@
 
 ## 已发布新鲜拆解
 
-- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD 与环境工程](digests/2026-06-12-aihot-agent-trends.md)
+- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD、Goal 与环境工程](digests/2026-06-12-aihot-agent-trends.md)
 
 ## 已展开提示词
 
 - [高价值提示词模板精选](prompts/high-value-prompts.md)
 - [Agent 新手任务提示词包：7 天完成第一个可验证闭环](prompts/agent-beginner-task-prompts.md)
 - [Codex 自我进化提示词](prompts/codex-self-evolution.md)
+- [Codex Goal 指令生成提示词](prompts/codex-goal-command-template.md)
 - [AI 教程视觉提示词方法：参考宝玉 skills](prompts/visual-prompts-baoyu-skills.md)
 
 ## 传播素材
@@ -170,6 +172,7 @@
 │   ├── skill-description-trigger-boundaries.md
 │   ├── agent-coding-10-line-spec-template.md
 │   ├── agent-executable-prd.md
+│   ├── codex-goal-writing-template.md
 │   ├── agent-long-task-environment-spec.md
 │   ├── codex-ppt-master-workflow.md
 │   ├── enterprise-agent-data-governance.md
@@ -178,6 +181,7 @@
 ├── prompts/
 │   ├── README.md
 │   ├── agent-beginner-task-prompts.md
+│   ├── codex-goal-command-template.md
 │   ├── codex-self-evolution.md
 │   ├── high-value-prompts.md
 │   └── visual-prompts-baoyu-skills.md

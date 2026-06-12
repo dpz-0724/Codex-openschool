@@ -558,6 +558,6 @@ Enterprise Agent Harness 的本质不是某个框架，也不是某个模型 API
 
 ## 参考来源
 
-- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD 与环境工程](../digests/2026-06-12-aihot-agent-trends.md)
+- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD、Goal 与环境工程](../digests/2026-06-12-aihot-agent-trends.md)
 - [EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery](https://arxiv.org/abs/2606.13662)
 - [Hugging Face Papers: EurekAgent](https://huggingface.co/papers/2606.13662)

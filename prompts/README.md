@@ -19,6 +19,7 @@
 | 2 | [AI 教程视觉提示词方法：参考宝玉 skills](visual-prompts-baoyu-skills.md) | 为 AI 教程、知识卡片、封面和概念图设计视觉方向 | 通过 |
 | 3 | [高价值提示词模板精选](high-value-prompts.md) | 8 个可直接使用的 Codex / Agent / PPT / 视频 / 研究模板 | 通过 |
 | 4 | [Agent 新手任务提示词包：7 天完成第一个可验证闭环](agent-beginner-task-prompts.md) | 按 7 天入门路线提供可复制的任务判断、网页整理、工具选择、护栏和验收提示词 | 通过 |
+| 5 | [Codex Goal 指令生成提示词](codex-goal-command-template.md) | 把一句模糊任务改写成可执行、可验证、有边界的 `/goal` 指令 | 通过 |
 
 ## 已下架模板
 
