@@ -28,6 +28,7 @@
 | 想把一句话任务交给 Codex 长时间执行 | [Codex Goal 指令写法](notes/codex-goal-writing-template.md) | 把模糊需求写成有验证、边界和暂停条件的 `/goal` |
 | 想把一句话需求交给 Agent 实现 | [AI 可执行 PRD](notes/agent-executable-prd.md) | 写出约束层、状态表和验收剧本 |
 | 想让 Agent 跑 30 分钟以上任务 | [Agent 长任务环境规格模板](notes/agent-long-task-environment-spec.md) | 先圈定环境、权限、预算和停止条件 |
+| 聊天越来越长、换线程就断片 | [Agent 共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) | 把聊天压缩成可验证的 `shared-context.md` |
 
 ## 30 分钟最小练习
 
@@ -60,7 +61,7 @@
 | Day 4 | 浏览器和软件操作 | [自动化浏览技术路线](notes/agent-automation-browser.md) + [Codex 浏览器开发者模式](notes/codex-browser-developer-mode.md) | 判断任务适合 API、浏览器、Developer mode 还是桌面控制 |
 | Day 5 | 权限和护栏 | [自主权限分级清单](notes/agent-autonomy-permission-ladder.md) | 一份 L0-L4 风险分级 |
 | Day 6 | 代码或产品交接 | [Goal 指令](notes/codex-goal-writing-template.md) + [10 行 Spec](notes/agent-coding-10-line-spec-template.md) + [AI 可执行 PRD](notes/agent-executable-prd.md) | 一个可验收、有边界的小需求规格 |
-| Day 7 | 长任务和复盘 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) | 一份可交给 Agent 执行的环境规格 |
+| Day 7 | 长任务和复盘 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) + [共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) | 一份可交给 Agent 执行的环境规格，一份可继承的共享上下文 |
 
 如果你只想先完成一个结果，Day 2 比 Day 1 更重要。先做，再回来看概念。
 
@@ -70,7 +71,8 @@
 
 1. [第一个 Agent 实战任务](notes/first-agent-web-research-task.md)
 2. [个人知识库搭建](notes/personal-knowledge-base-agent-wiki.md)
-3. [Agent 新手任务提示词包](prompts/agent-beginner-task-prompts.md)
+3. [Agent 共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md)
+4. [Agent 新手任务提示词包](prompts/agent-beginner-task-prompts.md)
 
 重点：先做公开资料，不碰账号后台、聊天记录、客户材料和私有文件。
 
@@ -118,6 +120,7 @@
 | 把 skill 写成泛泛能力介绍 | 容易误触发或重复触发 | [Skill 触发边界](notes/skill-description-trigger-boundaries.md) |
 | 只看 Agent 总结，不看真实 diff 或产物 | 容易把“说完成了”当成完成 | [代码审查工作流](notes/agent-code-review-workflow.md) |
 | 让长任务无限跑 | 没有预算、停止条件和回放证据 | [长任务环境规格模板](notes/agent-long-task-environment-spec.md) |
+| 把长期协作都留在聊天记录里 | 换线程后容易丢失目标、决定和已验证事实 | [共享上下文与知识编译](notes/agent-shared-context-knowledge-compile.md) |
 
 ## 推荐阅读顺序
 

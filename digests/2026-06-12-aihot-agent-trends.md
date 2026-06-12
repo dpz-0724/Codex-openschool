@@ -11,7 +11,7 @@
 
 ## 本期结论
 
-这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 6 个方法主题：
+这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 7 个方法主题：
 
 1. Agent 自主性需要按风险分层，而不是只有“全自动 / 每步确认”两个档位。
 2. Skills 正在变成团队约定和任务方法的载体，关键是触发边界要写清楚。
@@ -19,6 +19,7 @@
 4. AI 可执行 PRD 的价值是让 Agent 少猜：把核心循环、约束层、状态和验收剧本写清楚。
 5. `/goal` 的价值是把模糊任务收口成目标、验证、边界和暂停条件。
 6. 长任务 Agent 的瓶颈不只是提示词，而是环境：权限、产物、预算、人工介入。
+7. 多轮或多 Agent 协作需要共享已验证上下文，而不是把所有历史塞进聊天记录。
 
 本期已经落地到仓库的动作：新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“任务判断、工具选择、浏览边界、护栏、验收”做成可复制模板。
 
@@ -36,6 +37,7 @@
 | baoyu-design 更新 | [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) | 进入 Skills 主推 | 设计类 skill 的关键是复用设计系统，同时保护 Figma 文件和品牌资产 | [Skills 专题导览](../skills/README.md) |
 | Cursor Auto-review | [Cursor Blog](https://cursor.com/blog/agent-autonomy-auto-review) | 已沉淀成常青笔记 | Agent 自主权限要按风险分层，而不是二选一 | [权限分级清单](../notes/agent-autonomy-permission-ladder.md) |
 | Replit Agent Skills | [Replit Blog](https://replit.com/blog/custom-skills) | 作为趋势来源，不单列 skill | Custom Instructions 是长期约定，Skills 是按任务加载的操作手册 | [Skill 触发边界](../notes/skill-description-trigger-boundaries.md) |
+| DeLM：Decentralized Multi-Agent Systems with Shared Context | [arXiv:2606.10662](https://arxiv.org/abs/2606.10662) | 已沉淀成常青笔记 | 长期协作需要共享已验证上下文、任务队列和紧凑更新，不能只依赖聊天历史 | [共享上下文与知识编译](../notes/agent-shared-context-knowledge-compile.md) |
 | GitHub Copilot CLI 自定义 Agent | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli) | 观察，不进入 Skills 主推 | 终端里的“一次性提示”正在变成可复用 workflow，但需等更多实测边界 | 后续做 CLI workflow 专题 |
 | Codex 浏览器开发者模式 | [OpenAI Codex Chrome extension docs](https://developers.openai.com/codex/app/chrome-extension) | 已沉淀成常青笔记，不进入 Skills 主推 | 浏览器调试能力应纳入自动化浏览路线，但产品能力不是单独 skill | [Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md) |
 
@@ -253,6 +255,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把“学习笔记转成短帖”的方法放进低风险练习室，方便读者学习内容转译而不是直接照搬宣传文案。
 - 已把 Cursor Auto-review 和 Bugbot 更新合并沉淀成常青教程：[Agent 代码审查工作流](../notes/agent-code-review-workflow.md)。
 - 已把 Codex 浏览器开发者模式拆成常青教程：[Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md)，明确 in-app browser、Chrome extension 和 Developer mode 的使用边界。
+- 已把 DeLM 的共享已验证上下文思路，结合本地 notebook 方法笔记，拆成常青教程：[Agent 共享上下文与知识编译](../notes/agent-shared-context-knowledge-compile.md)。
 
 下一步优先级：
 
@@ -272,3 +275,4 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - [OpenAI to acquire Ona](https://openai.com/index/openai-to-acquire-ona/)
 - [OpenAI Codex: In-app browser](https://developers.openai.com/codex/app/browser)
 - [OpenAI Codex: Chrome extension](https://developers.openai.com/codex/app/chrome-extension)
+- [Decentralized Multi-Agent Systems with Shared Context](https://arxiv.org/abs/2606.10662)
