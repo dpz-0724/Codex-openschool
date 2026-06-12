@@ -107,11 +107,25 @@
 
 面向 500 Stars 的更新节奏、传播摘要和仓库元数据建议见：[500 Stars 增长维护手册](GROWTH_PLAYBOOK.md)。
 
+## 贡献与反馈
+
+- 贡献规范：[CONTRIBUTING.md](CONTRIBUTING.md)
+- 内容选题建议：使用 GitHub issue 模板里的“内容选题建议”。
+- 链接、错别字或目录问题：使用 GitHub issue 模板里的“链接 / 错别字 / 小修复”。
+
+所有建议都必须先脱敏。不接收账号、聊天记录、客户材料、密钥、本地路径、后台截图或未授权内容。
+
 ## 目录结构
 
 ```text
 .
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── content-suggestion.yml
+│   │   └── link-or-typo.yml
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── CHANNEL_STRATEGY.md
+├── CONTRIBUTING.md
 ├── GROWTH_PLAYBOOK.md
 ├── README.md
 ├── START_HERE.md

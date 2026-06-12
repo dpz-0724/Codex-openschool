@@ -1,0 +1,70 @@
+name: 内容选题建议
+description: 推荐一个适合 AI Agent 新手的教程、skill、提示词或学习笔记选题
+title: "[内容建议] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢建议。请不要提交账号、聊天记录、客户材料、密钥、本地路径、后台截图或未脱敏内容。
+  - type: input
+    id: topic
+    attributes:
+      label: 主题
+      description: 用一句话说明你建议收录什么。
+      placeholder: 例如：Agent 长任务如何设置停止条件
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 类型
+      options:
+        - 学习笔记
+        - Skill 分享
+        - 提示词模板
+        - 实战任务
+        - AIHot / 新鲜动态拆解
+        - 外部资源中文导读
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: 适合谁
+      description: 说明哪类新手会受益。
+      placeholder: 例如：已经会用 ChatGPT，但不知道怎么让 Agent 安全调工具的人。
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: 解决什么具体问题
+      description: 不要只写“很有用”，请说明卡点和读完能做什么。
+      placeholder: 例如：读完能写出 L0-L4 权限分级，并知道哪些动作必须人工确认。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 公开来源
+      description: 放官方博客、GitHub、论文、文档或作者主页链接；没有公开来源请说明“本地整理”。
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: 风险和边界
+      description: 说明是否涉及隐私、账号、版权、付费墙、自动化操作或未公开材料。
+      placeholder: 例如：不涉及账号登录；只使用公开网页；不复制长篇原文。
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 脱敏确认
+      options:
+        - label: 我没有提交账号、聊天记录、客户材料、密钥、本地路径、后台截图或未脱敏内容。
+          required: true
+        - label: 我理解维护者可能会拒绝只有标题、没有正文或无法公开核验的建议。
+          required: true
