@@ -2,9 +2,10 @@
 
 这里会持续分享我在使用 Codex、AI Agent、自动化工具和内容生产工作流时沉淀下来的公开材料。这个频道面向 AI Agent 新手，目标是帮助读者从“会问 AI”升级到“会让 Agent 做真实任务”。
 
-当前版本先做一个完整入口，分成四块：
+当前版本先做一个完整入口，分成五块：
 
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
+- 新鲜拆解：从 AIHot 和一手来源里提取近期 Agent 值得学的内容，不做热点搬运。
 - Skills 分享：全量审计后按专题主推 27 个真实 skills，不再为凑数混入标准、框架或普通工具。
 - 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、实战和避坑。
 - 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
@@ -26,6 +27,13 @@
 - 内容：自动化浏览、AI 资讯、内容入库、图文发布、PPT/文档、科研学术、视频脚本、UI/前端和部署验证。
 - 标准：只收录具体可用的 skill 或明确外部项目，不把普通方法论、标准或重复能力凑成条目。
 
+### AIHot 新鲜拆解
+
+- 数量：1 期。
+- 入口：[digests/README.md](digests/README.md)
+- 内容：从近期 Agent 动态中提炼新手可学习的方法，例如权限分级、skills 触发边界、spec 驱动和环境工程。
+- 标准：AIHot 只做发现入口；进入主推时优先补官方博客、GitHub、论文或文档链接。
+
 ### 学习笔记
 
 - 数量：10 篇已成文、已脱敏、可直接阅读的公开笔记。
@@ -35,9 +43,9 @@
 
 ### 提示词模板
 
-- 数量：10 个可用入口，其中包含 8 个精选模板和 2 个已展开专题提示词。
+- 数量：11 个可用入口，其中包含 8 个精选模板和 3 个已展开专题提示词。
 - 入口：[prompts/README.md](prompts/README.md)
-- 内容：Codex 自我进化、Agent 审计、PPT 生产、技术内容创作、视觉提示词方法。
+- 内容：Codex 自我进化、Agent 新手任务、Agent 审计、PPT 生产、技术内容创作、视觉提示词方法。
 - 标准：只保留能直接拿去执行、能说明使用边界的提示词。
 
 ## 已展开笔记
@@ -53,9 +61,14 @@
 - [Codex + PPT Master：从资料到高质量 PPT 的工作流](notes/codex-ppt-master-workflow.md)
 - [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](notes/personal-knowledge-base-agent-wiki.md)
 
+## 已发布新鲜拆解
+
+- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec 与环境工程](digests/2026-06-12-aihot-agent-trends.md)
+
 ## 已展开提示词
 
 - [高价值提示词模板精选](prompts/high-value-prompts.md)
+- [Agent 新手任务提示词包：7 天完成第一个可验证闭环](prompts/agent-beginner-task-prompts.md)
 - [Codex 自我进化提示词](prompts/codex-self-evolution.md)
 - [AI 教程视觉提示词方法：参考宝玉 skills](prompts/visual-prompts-baoyu-skills.md)
 
@@ -80,6 +93,9 @@
 ├── CHANNEL_STRATEGY.md
 ├── GROWTH_PLAYBOOK.md
 ├── README.md
+├── digests/
+│   ├── README.md
+│   └── 2026-06-12-aihot-agent-trends.md
 ├── skills/
 │   └── README.md
 ├── notes/
@@ -96,6 +112,7 @@
 │   └── personal-knowledge-base-agent-wiki.md
 └── prompts/
     ├── README.md
+    ├── agent-beginner-task-prompts.md
     ├── codex-self-evolution.md
     ├── high-value-prompts.md
     └── visual-prompts-baoyu-skills.md
