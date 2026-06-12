@@ -1,4 +1,4 @@
-# AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec 与环境工程
+# AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD 与环境工程
 
 ## 审计信息
 
@@ -11,16 +11,19 @@
 
 ## 本期结论
 
-这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 4 条方法趋势：
+这期 AIHot 里 Agent 相关内容很多，但真正值得新手学习的不是“又出了一个工具”，而是 5 个方法主题：
 
 1. Agent 自主性需要按风险分层，而不是只有“全自动 / 每步确认”两个档位。
 2. Skills 正在变成团队约定和任务方法的载体，关键是触发边界要写清楚。
 3. Spec 驱动开发在 Agent 编程里继续升温，因为它能把“先想清楚再实现”固定成流程。
-4. 长任务 Agent 的瓶颈不只是提示词，而是环境：权限、产物、预算、人工介入。
+4. AI 可执行 PRD 的价值是让 Agent 少猜：把核心循环、约束层、状态和验收剧本写清楚。
+5. 长任务 Agent 的瓶颈不只是提示词，而是环境：权限、产物、预算、人工介入。
 
 本期已经落地到仓库的动作：新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“任务判断、工具选择、浏览边界、护栏、验收”做成可复制模板。
 
 更新补充：2026-06-12 再看 AIHot 的 Skills 相关条目，`qiaomu-ai-prd`、Spec 驱动 Skills、Replit Agent Skills、`baoyu-design`、Text-To-Lottie、Teach skill 共同指向同一个问题：skill 的价值不在于名字多，而在于触发边界、输入输出和验收方式清楚。这个方向已扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
+
+再次更新：`qiaomu-ai-prd` 已核到公开 GitHub 仓库，并扩展成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)。这篇教程不搬运原始长提示词，而是提炼新手真正需要的结构：速读卡、核心循环、约束层、状态表、数据结构和验收剧本。
 
 ## 1. Cursor Auto-review：Agent 权限不是开关，是风险刻度
 
@@ -116,6 +119,35 @@ Verify：实现是否真的匹配前两份 spec。
 - 已扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
 - 当前提示词包的 Day 1 和 Day 7 已经采用同样思路：先定义完成标准，再执行。
 
+## 3.5 qiaomu-ai-prd：PRD 的价值是让 Agent 少猜
+
+- AIHot 条目：qiaomu-ai-prd：面向 AI 的 PRD 生成 Prompt。
+- 稳定入口：[joeseesun/qiaomu-ai-prd](https://github.com/joeseesun/qiaomu-ai-prd)
+- 适合谁：想把一句话产品想法交给 AI 编程助手实现，但又不想让 Agent 乱猜范围的人。
+
+### 提炼
+
+`qiaomu-ai-prd` 的价值不只是“生成一份 PRD”。它把一句话需求拆成 AI 速读卡、产品定位、用户场景、约束层、页面或模块结构、数据模型、优先级、性能指标和验收剧本。
+
+对新手最重要的一点是：PRD 不是越长越好，而是要把 Agent 最容易猜错的地方写清楚。
+
+### 新手可以怎么学
+
+把 PRD 分成三层：
+
+| 层级 | 作用 | 例子 |
+|---|---|---|
+| 硬约束 | 不能违反，违反就算失败 | 不读取私有数据；P0 必须跑通核心闭环 |
+| 推荐默认 | 没有更好理由时按这个做 | Markdown 输出、移动优先、本地保存 |
+| 发挥空间 | 允许 Agent 做得更好 | 空状态文案、动效、卡片视觉、快捷入口 |
+
+然后再补一组验收剧本：正常路径、失败路径、隐私/权限边界。这样 Agent 才能实现后自检，而不是只说“已完成”。
+
+### 可落地内容
+
+- 已扩展成常青教程：[AI 可执行 PRD：把一句话需求写成 Agent 能实现的产品规格](../notes/agent-executable-prd.md)。
+- 已把 `qiaomu-ai-prd` 放入 [Skills 专题导览](../skills/README.md)，标注为外部公开 skill，并注明不复制原始长提示词。
+
 ## 4. EurekAgent：长任务 Agent 的关键是环境工程
 
 - AIHot 条目：EurekAgent 环境工程化实现自主科学发现。
@@ -148,7 +180,6 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 
 | 条目 | 暂不主推原因 | 后续处理 |
 |---|---|---|
-| qiaomu-ai-prd：面向 AI 的 PRD 生成 Prompt | 已核到 GitHub 项目；这次只作为 Spec / PRD 方法旁证，不直接主推安装 | 后续可拆成“AI 可执行 PRD”专题，不搬运模板全文 |
 | Perplexity Computer 集成 Deep Research | 主要是产品能力更新，新手可操作细节不足 | 等官方文档或实测路径更清晰 |
 | Hermes Agent Desktop / Meoo CLI / WorkBuddy | 工具属性强，需要安装体验和边界验证 | 进入后续“工具实测”候选池 |
 
@@ -161,13 +192,14 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 Cursor Auto-review 方向扩展成常青教程：[Agent 自主权限分级清单](../notes/agent-autonomy-permission-ladder.md)。
 - 已把 Replit Skills / AIHot Skills 趋势扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
 - 已把 Spec 驱动开发方向扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
+- 已把 `qiaomu-ai-prd` 拆成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)，并加入 Skills 导览。
 - 已把 EurekAgent 的环境工程视角补进常青教程：[Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)。
 
 下一步优先级：
 
 1. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
-2. 继续观察 `qiaomu-ai-prd` 一类 AI PRD skills，把可复用部分拆成“AI 可执行 PRD”专题，不直接搬运模板全文。
-3. 从本地和公开资料里补一篇“Agent 长任务环境规格模板”，把权限、产物、预算、人在回路做成可复制清单。
+2. 从本地和公开资料里补一篇“Agent 长任务环境规格模板”，把权限、产物、预算、人在回路做成可复制清单。
+3. 继续观察公众号排版、Lottie、设计系统等内容生产型 skills，只收录可核验、可复用、边界清楚的项目。
 
 ## 参考来源
 
