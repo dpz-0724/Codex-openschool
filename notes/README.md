@@ -32,6 +32,7 @@
 | 15 | [Codex + PPT Master：从资料到高质量 PPT 的工作流](codex-ppt-master-workflow.md) | 想用 Codex 做课程、汇报、长文档转 PPT 的人 | 给出稳定流程和验收点，不只是“让 AI 做 PPT” | 通过 |
 | 16 | [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](personal-knowledge-base-agent-wiki.md) | 想用 Obsidian、Markdown、Codex 或 Agent 搭建长期知识库的人 | 从本地 notebook 的成熟方法中提炼出分层架构、入库门禁、查询回写和 lint 流程 | 通过 |
 | 17 | [Codex Goal 指令怎么写：把模糊需求变成可执行目标](codex-goal-writing-template.md) | 想让 Codex 长任务少跑偏、能验收、知道何时暂停的新手 | 把 AIHot 里的 `qiaomu-goal-meta-skill` 拆成目标、验证、约束、边界、迭代、完成和暂停 7 个字段 | 通过 |
+| 18 | [Codex 浏览器开发者模式：把网页调试变成可验证的 Agent 任务](codex-browser-developer-mode.md) | 已经开始用 Codex 预览、调试或修复网页，但分不清 Browser、Chrome 扩展和 Developer mode 的新手 | 把 AIHot 里的 Codex 浏览器开发者模式更新，结合 OpenAI 官方文档拆成使用判断表、调试流程、提示词和脱敏清单 | 通过 |
 
 ## 已下架内容
 

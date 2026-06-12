@@ -37,7 +37,7 @@
 | Cursor Auto-review | [Cursor Blog](https://cursor.com/blog/agent-autonomy-auto-review) | 已沉淀成常青笔记 | Agent 自主权限要按风险分层，而不是二选一 | [权限分级清单](../notes/agent-autonomy-permission-ladder.md) |
 | Replit Agent Skills | [Replit Blog](https://replit.com/blog/custom-skills) | 作为趋势来源，不单列 skill | Custom Instructions 是长期约定，Skills 是按任务加载的操作手册 | [Skill 触发边界](../notes/skill-description-trigger-boundaries.md) |
 | GitHub Copilot CLI 自定义 Agent | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli) | 观察，不进入 Skills 主推 | 终端里的“一次性提示”正在变成可复用 workflow，但需等更多实测边界 | 后续做 CLI workflow 专题 |
-| Codex 浏览器开发者模式 | [OpenAI Codex Chrome extension docs](https://developers.openai.com/codex/app/chrome-extension) | 观察，不进入 Skills 主推 | 浏览器调试能力应纳入自动化浏览路线，但产品能力不是单独 skill | 后续更新自动化浏览笔记 |
+| Codex 浏览器开发者模式 | [OpenAI Codex Chrome extension docs](https://developers.openai.com/codex/app/chrome-extension) | 已沉淀成常青笔记，不进入 Skills 主推 | 浏览器调试能力应纳入自动化浏览路线，但产品能力不是单独 skill | [Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md) |
 
 更新补充：2026-06-12 再看 AIHot 的 Skills 相关条目，`qiaomu-ai-prd`、Spec 驱动 Skills、Replit Agent Skills、`baoyu-design`、Text-To-Lottie、Teach skill 共同指向同一个问题：skill 的价值不在于名字多，而在于触发边界、输入输出和验收方式清楚。这个方向已扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
 
@@ -252,11 +252,12 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把“长任务环境规格”单独扩展成可复制模板：[Agent 长任务环境规格模板](../notes/agent-long-task-environment-spec.md)。
 - 已把“学习笔记转成短帖”的方法放进低风险练习室，方便读者学习内容转译而不是直接照搬宣传文案。
 - 已把 Cursor Auto-review 和 Bugbot 更新合并沉淀成常青教程：[Agent 代码审查工作流](../notes/agent-code-review-workflow.md)。
+- 已把 Codex 浏览器开发者模式拆成常青教程：[Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md)，明确 in-app browser、Chrome extension 和 Developer mode 的使用边界。
 
 下一步优先级：
 
 1. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
-2. 继续观察 MiMo Code、GitHub Copilot CLI 自定义 Agent、Codex 浏览器开发者模式等终端型或产品型能力，只在能写出操作步骤、边界和验收时进入主推。
+2. 继续观察 MiMo Code、GitHub Copilot CLI 自定义 Agent 等终端型或产品型能力，只在能写出操作步骤、边界和验收时进入主推。
 3. 继续把近期热点拆成可复制的学习练习、提示词或判断表，而不是发布内部运营素材。
 
 ## 参考来源
@@ -269,3 +270,5 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - [qiaomu-ai-prd](https://github.com/joeseesun/qiaomu-ai-prd)
 - [Hugging Face Papers: EurekAgent](https://huggingface.co/papers/2606.13662)
 - [OpenAI to acquire Ona](https://openai.com/index/openai-to-acquire-ona/)
+- [OpenAI Codex: In-app browser](https://developers.openai.com/codex/app/browser)
+- [OpenAI Codex: Chrome extension](https://developers.openai.com/codex/app/chrome-extension)
