@@ -2,6 +2,8 @@
 
 这里会持续分享我在使用 Codex、AI Agent、自动化工具和内容生产工作流时沉淀下来的公开材料。这个频道面向 AI Agent 新手，目标是帮助读者从“会问 AI”升级到“会让 Agent 做真实任务”。
 
+第一次来，先读：[从这里开始：AI Agent 新手导读](START_HERE.md)。
+
 当前版本先做一个完整入口，分成六块：
 
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
@@ -17,6 +19,7 @@
 
 ### 新手路线
 
+- 推荐入口：[从这里开始：AI Agent 新手导读](START_HERE.md)
 - 推荐先读：[AI Agent 新手入门路线图](notes/agent-beginner-learning-path.md)
 - 目标：7 天内完成“明确任务 -> 找资料 -> 调工具 -> 写结果 -> 验证 -> 保存为笔记”的第一个 Agent 小闭环。
 - 边界：不追求全自动，不鼓励越权操作账号、付款、发布或处理未脱敏隐私。
@@ -57,6 +60,7 @@
 
 ## 已展开笔记
 
+- [从这里开始：AI Agent 新手导读](START_HERE.md)
 - [AI Agent 新手入门路线图：从会聊天到会让 Agent 做事](notes/agent-beginner-learning-path.md)
 - [AI Agent 新手术语表：从 Agent、Tool 到 Eval、Trace](notes/agent-glossary.md)
 - [AI Agent 新手概念 FAQ：Agent、Workflow、Skill、MCP、CLI、RPA 到底有什么区别](notes/agent-concepts-faq.md)
@@ -110,6 +114,7 @@
 ├── CHANNEL_STRATEGY.md
 ├── GROWTH_PLAYBOOK.md
 ├── README.md
+├── START_HERE.md
 ├── digests/
 │   ├── README.md
 │   └── 2026-06-12-aihot-agent-trends.md
