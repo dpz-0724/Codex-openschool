@@ -81,6 +81,7 @@
 - Agent 自动化浏览。
 - 上下文工程。
 - 工具调用与权限边界。
+- MCP vs CLI：什么时候标准化，什么时候保持轻量。
 - Agent harness、eval、trace、replay、guardrail。
 - 个人知识库与 Agent 维护。
 
@@ -193,6 +194,7 @@
 - 第一个 Agent 自动化浏览任务。
 - Agent、Workflow、RPA、脚本、Chatbot 的区别。
 - 什么是工具调用：Data / Action / Orchestration。
+- MCP vs CLI 工具调用选型：不要为了协议牺牲任务闭环。
 - 上下文工程入门：为什么不是提示词越长越好。
 - Skills 怎么用：为什么它是 Agent 的操作手册。
 
@@ -221,6 +223,8 @@
 - [Anthropic Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)：用于 workflow vs agent、simple composable patterns。
 - [Anthropic context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)：用于解释上下文是有限资源，需要持续筛选。
 - [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)：用于参考课程化结构和 lesson 组织方式。
+- [Model Context Protocol 官方文档](https://modelcontextprotocol.io/docs/getting-started/intro)：用于解释 MCP 的定位、工具规范、授权和安全边界。
+- [Anthropic Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp)：用于解释工具过多时的上下文成本和按需调用思路。
 
 所有外部内容只做：
 

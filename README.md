@@ -6,7 +6,7 @@
 
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
 - Skills 分享：全量审计后按专题主推 27 个真实 skills，不再为凑数混入标准、框架或普通工具。
-- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、实战和避坑。
+- 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、工具调用、实战和避坑。
 - 提示词模板：审计后只保留和 Codex / Agent / PPT / 技术内容强相关的高价值模板。
 
 所有内容都按“可公开、可复用、可注明来源”的标准整理。本仓库不会上传本地私有 skill 源码、真实聊天记录、账号后台、客户材料、密钥、个人路径或未脱敏截图。
@@ -28,9 +28,9 @@
 
 ### 学习笔记
 
-- 数量：6 篇已成文、已脱敏、可直接阅读的公开笔记。
+- 数量：7 篇已成文、已脱敏、可直接阅读的公开笔记。
 - 入口：[notes/README.md](notes/README.md)
-- 内容：Agent 新手路线、自动化浏览、Enterprise Agent Harness、企业数据治理、PPT Master 工作流、个人知识库搭建。
+- 内容：Agent 新手路线、自动化浏览、MCP vs CLI 工具调用选型、Enterprise Agent Harness、企业数据治理、PPT Master 工作流、个人知识库搭建。
 - 标准：先有正文，再进入目录；没有正文的选题只留在本地待办。
 
 ### 提示词模板
@@ -44,6 +44,7 @@
 
 - [AI Agent 新手入门路线图：从会聊天到会让 Agent 做事](notes/agent-beginner-learning-path.md)
 - [Agent 自动化浏览与软件操作技术路线](notes/agent-automation-browser.md)
+- [Agent 工具调用选型：什么时候用 MCP，什么时候用 CLI](notes/agent-tooling-mcp-vs-cli.md)
 - [Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)
 - [企业 Agent 数据治理与自助分析落地手册](notes/enterprise-agent-data-governance.md)
 - [Codex + PPT Master：从资料到高质量 PPT 的工作流](notes/codex-ppt-master-workflow.md)
@@ -67,11 +68,14 @@
 
 这个仓库按长期频道维护，不是一次性资料夹。阶段目标和更新规则见：[Codex OpenSchool 频道运营手册](CHANNEL_STRATEGY.md)。
 
+面向 500 Stars 的更新节奏、传播摘要和仓库元数据建议见：[500 Stars 增长维护手册](GROWTH_PLAYBOOK.md)。
+
 ## 目录结构
 
 ```text
 .
 ├── CHANNEL_STRATEGY.md
+├── GROWTH_PLAYBOOK.md
 ├── README.md
 ├── skills/
 │   └── README.md
@@ -79,6 +83,7 @@
 │   ├── README.md
 │   ├── agent-beginner-learning-path.md
 │   ├── agent-automation-browser.md
+│   ├── agent-tooling-mcp-vs-cli.md
 │   ├── codex-ppt-master-workflow.md
 │   ├── enterprise-agent-data-governance.md
 │   ├── enterprise-agent-harness.md
