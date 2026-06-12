@@ -21,19 +21,20 @@
 | 4 | [第一个 Agent 实战任务：整理一篇公开网页并写成 Markdown 笔记](first-agent-web-research-task.md) | 已经理解基本概念、但还没让 Agent 做过完整任务的新手 | 用 30 分钟完成“公开资料 -> 结构化笔记 -> 自检 -> 入库”的第一个低风险闭环 | 通过 |
 | 5 | [Agent 自动化浏览与软件操作技术路线](agent-automation-browser.md) | 想理解浏览器自动化、Computer Use、RPA 和 Agent 工具边界的人 | 有清晰技术分层，能帮助判断“该用 API、浏览器还是桌面控制” | 通过 |
 | 6 | [Agent 工具调用选型：什么时候用 MCP，什么时候用 CLI](agent-tooling-mcp-vs-cli.md) | 已经知道 Agent 可以用工具、但不确定该接 MCP、CLI、API 还是浏览器自动化的新手 | 用本地决策经验和官方 MCP 文档整理出工具层选型表、判断流程和安全边界 | 通过 |
-| 7 | [Agent 自主权限分级清单：什么时候放手，什么时候必须停下来](agent-autonomy-permission-ladder.md) | 已经开始让 Agent 调工具、改文件、浏览网页、发布草稿的新手 | 把 AIHot 发现的 Auto-review 思路转成 L0-L4 权限分级、工具前检查表和可复制提示词 | 通过 |
-| 8 | [Agent 代码审查工作流：从 Auto-review 到 Bugbot](agent-code-review-workflow.md) | 已经开始让 Agent 写代码、改文件、提交 PR，但还没有稳定审查流程的新手 | 把 AIHot 里的 Cursor Auto-review 和 Bugbot 更新拆成动作前、提交前、PR 后三段式审查闭环 | 通过 |
-| 9 | [Skill 描述怎么写才不误触发：description 是触发器，不是宣传语](skill-description-trigger-boundaries.md) | 想安装、创建或审核 Agent skills，但不确定怎么写触发边界的新手 | 把 AIHot 近期 Skills 动态和 Replit 官方资料拆成 description 写法、误触发诊断和发布前审计表 | 通过 |
-| 10 | [Agent 编程前的 10 行 Spec 模板：先把需求写成可验收任务](agent-coding-10-line-spec-template.md) | 已经会让 Agent 写代码或改文件，但经常遇到“能跑却不是我要的”的新手 | 把 AIHot 里的 Spec 驱动开发趋势转成 10 行可复制模板、执行提示和验收审计表 | 通过 |
-| 11 | [AI 可执行 PRD：把一句话需求写成 Agent 能实现的产品规格](agent-executable-prd.md) | 想让 AI 编程助手做页面、工具或产品，但经常返工的新手 | 把 AIHot 里的 `qiaomu-ai-prd` 和 Spec workflow 拆成可复制的 PRD 结构、约束层、状态表和验收剧本 | 通过 |
-| 12 | [Agent 长任务环境规格模板：先圈环境，再让 Agent 自主跑](agent-long-task-environment-spec.md) | 想把任务交给 Agent 跑 30 分钟以上，但担心越权、跑偏或无证据的新手 | 把 EurekAgent 的环境工程和 OpenAI Ona 公告里的持久执行环境思路，拆成权限、产物、预算、人在回路和回放模板 | 通过 |
-| 13 | [Enterprise Agent Harness 学习笔记](enterprise-agent-harness.md) | 想把 Agent 从 demo 做成可测试、可审计系统的人 | 有完整工程化框架，覆盖环境工程、golden case、trace、replay、guardrail、audit | 通过 |
-| 14 | [企业 Agent 数据治理与自助分析落地手册](enterprise-agent-data-governance.md) | 做企业数据 Agent、BI Agent、自助分析的人 | 解释业务定义、语义层、canonical model、SOP 和验收题库如何组合 | 通过 |
-| 15 | [Codex + PPT Master：从资料到高质量 PPT 的工作流](codex-ppt-master-workflow.md) | 想用 Codex 做课程、汇报、长文档转 PPT 的人 | 给出稳定流程和验收点，不只是“让 AI 做 PPT” | 通过 |
-| 16 | [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](personal-knowledge-base-agent-wiki.md) | 想用 Obsidian、Markdown、Codex 或 Agent 搭建长期知识库的人 | 从本地 notebook 的成熟方法中提炼出分层架构、入库门禁、查询回写和 lint 流程 | 通过 |
-| 17 | [Codex Goal 指令怎么写：把模糊需求变成可执行目标](codex-goal-writing-template.md) | 想让 Codex 长任务少跑偏、能验收、知道何时暂停的新手 | 把 AIHot 里的 `qiaomu-goal-meta-skill` 拆成目标、验证、约束、边界、迭代、完成和暂停 7 个字段 | 通过 |
-| 18 | [Codex 浏览器开发者模式：把网页调试变成可验证的 Agent 任务](codex-browser-developer-mode.md) | 已经开始用 Codex 预览、调试或修复网页，但分不清 Browser、Chrome 扩展和 Developer mode 的新手 | 把 AIHot 里的 Codex 浏览器开发者模式更新，结合 OpenAI 官方文档拆成使用判断表、调试流程、提示词和脱敏清单 | 通过 |
-| 19 | [Agent 共享上下文与知识编译：别把长期协作塞进聊天记录](agent-shared-context-knowledge-compile.md) | 已经让 Agent 连续做几轮任务，开始遇到上下文太长、结论丢失、换线程断片的新手 | 把本地 notebook 的上下文压缩、知识编译、每日小结方法，结合 DeLM 共享已验证上下文思路，整理成 `shared-context.md` 模板和入库验证流程 | 通过 |
+| 7 | [终端 Agent 可重复工作流：从一次性提示到可审计任务卡](agent-terminal-workflow-card.md) | 已经会在终端让 Agent 跑命令、改文件或整理资料，但经常反复解释同一类任务的新手 | 把 GitHub Copilot CLI 自定义 Agent 思路和本地 Git 工作流经验，整理成可复制 workflow card、工具边界、输出合同和停止线 | 通过 |
+| 8 | [Agent 自主权限分级清单：什么时候放手，什么时候必须停下来](agent-autonomy-permission-ladder.md) | 已经开始让 Agent 调工具、改文件、浏览网页、发布草稿的新手 | 把 AIHot 发现的 Auto-review 思路转成 L0-L4 权限分级、工具前检查表和可复制提示词 | 通过 |
+| 9 | [Agent 代码审查工作流：从 Auto-review 到 Bugbot](agent-code-review-workflow.md) | 已经开始让 Agent 写代码、改文件、提交 PR，但还没有稳定审查流程的新手 | 把 AIHot 里的 Cursor Auto-review 和 Bugbot 更新拆成动作前、提交前、PR 后三段式审查闭环 | 通过 |
+| 10 | [Skill 描述怎么写才不误触发：description 是触发器，不是宣传语](skill-description-trigger-boundaries.md) | 想安装、创建或审核 Agent skills，但不确定怎么写触发边界的新手 | 把 AIHot 近期 Skills 动态和 Replit 官方资料拆成 description 写法、误触发诊断和发布前审计表 | 通过 |
+| 11 | [Agent 编程前的 10 行 Spec 模板：先把需求写成可验收任务](agent-coding-10-line-spec-template.md) | 已经会让 Agent 写代码或改文件，但经常遇到“能跑却不是我要的”的新手 | 把 AIHot 里的 Spec 驱动开发趋势转成 10 行可复制模板、执行提示和验收审计表 | 通过 |
+| 12 | [AI 可执行 PRD：把一句话需求写成 Agent 能实现的产品规格](agent-executable-prd.md) | 想让 AI 编程助手做页面、工具或产品，但经常返工的新手 | 把 AIHot 里的 `qiaomu-ai-prd` 和 Spec workflow 拆成可复制的 PRD 结构、约束层、状态表和验收剧本 | 通过 |
+| 13 | [Agent 长任务环境规格模板：先圈环境，再让 Agent 自主跑](agent-long-task-environment-spec.md) | 想把任务交给 Agent 跑 30 分钟以上，但担心越权、跑偏或无证据的新手 | 把 EurekAgent 的环境工程和 OpenAI Ona 公告里的持久执行环境思路，拆成权限、产物、预算、人在回路和回放模板 | 通过 |
+| 14 | [Enterprise Agent Harness 学习笔记](enterprise-agent-harness.md) | 想把 Agent 从 demo 做成可测试、可审计系统的人 | 有完整工程化框架，覆盖环境工程、golden case、trace、replay、guardrail、audit | 通过 |
+| 15 | [企业 Agent 数据治理与自助分析落地手册](enterprise-agent-data-governance.md) | 做企业数据 Agent、BI Agent、自助分析的人 | 解释业务定义、语义层、canonical model、SOP 和验收题库如何组合 | 通过 |
+| 16 | [Codex + PPT Master：从资料到高质量 PPT 的工作流](codex-ppt-master-workflow.md) | 想用 Codex 做课程、汇报、长文档转 PPT 的人 | 给出稳定流程和验收点，不只是“让 AI 做 PPT” | 通过 |
+| 17 | [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](personal-knowledge-base-agent-wiki.md) | 想用 Obsidian、Markdown、Codex 或 Agent 搭建长期知识库的人 | 从本地 notebook 的成熟方法中提炼出分层架构、入库门禁、查询回写和 lint 流程 | 通过 |
+| 18 | [Codex Goal 指令怎么写：把模糊需求变成可执行目标](codex-goal-writing-template.md) | 想让 Codex 长任务少跑偏、能验收、知道何时暂停的新手 | 把 AIHot 里的 `qiaomu-goal-meta-skill` 拆成目标、验证、约束、边界、迭代、完成和暂停 7 个字段 | 通过 |
+| 19 | [Codex 浏览器开发者模式：把网页调试变成可验证的 Agent 任务](codex-browser-developer-mode.md) | 已经开始用 Codex 预览、调试或修复网页，但分不清 Browser、Chrome 扩展和 Developer mode 的新手 | 把 AIHot 里的 Codex 浏览器开发者模式更新，结合 OpenAI 官方文档拆成使用判断表、调试流程、提示词和脱敏清单 | 通过 |
+| 20 | [Agent 共享上下文与知识编译：别把长期协作塞进聊天记录](agent-shared-context-knowledge-compile.md) | 已经让 Agent 连续做几轮任务，开始遇到上下文太长、结论丢失、换线程断片的新手 | 把本地 notebook 的上下文压缩、知识编译、每日小结方法，结合 DeLM 共享已验证上下文思路，整理成 `shared-context.md` 模板和入库验证流程 | 通过 |
 
 ## 已下架内容
 

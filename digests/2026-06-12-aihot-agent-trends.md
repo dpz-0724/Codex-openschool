@@ -20,6 +20,7 @@
 5. `/goal` 的价值是把模糊任务收口成目标、验证、边界和暂停条件。
 6. 长任务 Agent 的瓶颈不只是提示词，而是环境：权限、产物、预算、人工介入。
 7. 多轮或多 Agent 协作需要共享已验证上下文，而不是把所有历史塞进聊天记录。
+8. 终端里的重复任务应该沉淀成可审计 workflow card，而不是每次重写一次性提示词。
 
 本期已经落地到仓库的动作：新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“任务判断、工具选择、浏览边界、护栏、验收”做成可复制模板。
 
@@ -38,7 +39,7 @@
 | Cursor Auto-review | [Cursor Blog](https://cursor.com/blog/agent-autonomy-auto-review) | 已沉淀成常青笔记 | Agent 自主权限要按风险分层，而不是二选一 | [权限分级清单](../notes/agent-autonomy-permission-ladder.md) |
 | Replit Agent Skills | [Replit Blog](https://replit.com/blog/custom-skills) | 作为趋势来源，不单列 skill | Custom Instructions 是长期约定，Skills 是按任务加载的操作手册 | [Skill 触发边界](../notes/skill-description-trigger-boundaries.md) |
 | DeLM：Decentralized Multi-Agent Systems with Shared Context | [arXiv:2606.10662](https://arxiv.org/abs/2606.10662) | 已沉淀成常青笔记 | 长期协作需要共享已验证上下文、任务队列和紧凑更新，不能只依赖聊天历史 | [共享上下文与知识编译](../notes/agent-shared-context-knowledge-compile.md) |
-| GitHub Copilot CLI 自定义 Agent | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli) | 观察，不进入 Skills 主推 | 终端里的“一次性提示”正在变成可复用 workflow，但需等更多实测边界 | 后续做 CLI workflow 专题 |
+| GitHub Copilot CLI 自定义 Agent | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/) | 已沉淀成常青笔记，不进入 Skills 主推 | 终端里的“一次性提示”正在变成可复用 workflow；关键是最小工具、禁止动作、输出合同和停止条件 | [终端 Agent 可重复工作流](../notes/agent-terminal-workflow-card.md) |
 | Codex 浏览器开发者模式 | [OpenAI Codex Chrome extension docs](https://developers.openai.com/codex/app/chrome-extension) | 已沉淀成常青笔记，不进入 Skills 主推 | 浏览器调试能力应纳入自动化浏览路线，但产品能力不是单独 skill | [Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md) |
 
 更新补充：2026-06-12 再看 AIHot 的 Skills 相关条目，`qiaomu-ai-prd`、Spec 驱动 Skills、Replit Agent Skills、`baoyu-design`、Text-To-Lottie、Teach skill 共同指向同一个问题：skill 的价值不在于名字多，而在于触发边界、输入输出和验收方式清楚。这个方向已扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
@@ -236,7 +237,6 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 | Hermes Agent Desktop / Meoo CLI / WorkBuddy | 工具属性强，需要安装体验和边界验证 | 进入后续“工具实测”候选池 |
 | MiMo Code V0.1.0 | 亮点在记忆、会话检查点和终端 Agent，但目前只看到 AIHot 摘要和公众号入口 | 先核 GitHub、安装门槛、隐私边界，再决定是否做“国产终端 Agent 实测” |
 | Google DeepMind 多智能体安全研究资助 | 偏行业和研究资助，新手短期可操作性弱 | 观察是否出现可直接学习的多 Agent 安全案例 |
-| GitHub Copilot CLI 自定义 Agent | 官方博客已发布，但本仓库还没有实测其 workflow 文件组织和权限边界 | 等做“终端 Agent 可重复工作流”专题时再展开 |
 | OpenRouter 与 Cursor 集成 | 更像模型接入配置指南，不是独立 skill | 只有在做“编码 Agent 模型路由”专题时再收录 |
 
 ## 本期给仓库的更新建议
@@ -256,11 +256,12 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 Cursor Auto-review 和 Bugbot 更新合并沉淀成常青教程：[Agent 代码审查工作流](../notes/agent-code-review-workflow.md)。
 - 已把 Codex 浏览器开发者模式拆成常青教程：[Codex 浏览器开发者模式](../notes/codex-browser-developer-mode.md)，明确 in-app browser、Chrome extension 和 Developer mode 的使用边界。
 - 已把 DeLM 的共享已验证上下文思路，结合本地 notebook 方法笔记，拆成常青教程：[Agent 共享上下文与知识编译](../notes/agent-shared-context-knowledge-compile.md)。
+- 已把 GitHub Copilot CLI 自定义 Agent 的 workflow 思路，结合本地 Git / Claude Code 工作流笔记，拆成常青教程：[终端 Agent 可重复工作流](../notes/agent-terminal-workflow-card.md)。
 
 下一步优先级：
 
 1. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
-2. 继续观察 MiMo Code、GitHub Copilot CLI 自定义 Agent 等终端型或产品型能力，只在能写出操作步骤、边界和验收时进入主推。
+2. 继续观察 MiMo Code 等终端型或产品型能力，只在能写出操作步骤、边界和验收时进入主推。
 3. 继续把近期热点拆成可复制的学习练习、提示词或判断表，而不是发布内部运营素材。
 
 ## 参考来源
@@ -276,3 +277,5 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - [OpenAI Codex: In-app browser](https://developers.openai.com/codex/app/browser)
 - [OpenAI Codex: Chrome extension](https://developers.openai.com/codex/app/chrome-extension)
 - [Decentralized Multi-Agent Systems with Shared Context](https://arxiv.org/abs/2606.10662)
+- [GitHub Blog: From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/)
+- [GitHub Docs: Creating custom agents for Copilot coding agent](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents)
