@@ -4,9 +4,10 @@
 
 第一次来，先读：[从这里开始：AI Agent 新手导读](START_HERE.md)。
 
-当前版本先做一个完整入口，分成六块：
+当前版本先做一个完整入口，分成七块：
 
 - 新手路线：先给完全小白一条 7 天入门路径，避免一上来被框架和术语淹没。
+- 实战练习：把路线、笔记和提示词拆成 7 个低风险小练习，读者可以直接照着做。
 - 新鲜拆解：从 AIHot 和一手来源里提取近期 Agent 值得学的内容，不做热点搬运。
 - Skills 分享：全量审计后按专题主推 28 个真实 skills，不再为凑数混入标准、框架或普通工具。
 - 学习笔记：审计后只保留已经整理成公开 MD 的高价值笔记，优先服务 Agent 入门、术语表、概念辨析、第一任务、工具调用、权限分级、代码审查、skills 触发边界、Spec 模板、AI 可执行 PRD、长任务环境规格、实战和避坑。
@@ -23,6 +24,12 @@
 - 推荐先读：[AI Agent 新手入门路线图](notes/agent-beginner-learning-path.md)
 - 目标：7 天内完成“明确任务 -> 找资料 -> 调工具 -> 写结果 -> 验证 -> 保存为笔记”的第一个 Agent 小闭环。
 - 边界：不追求全自动，不鼓励越权操作账号、付款、发布或处理未脱敏隐私。
+
+### 实战练习
+
+- 入口：[Agent 新手低风险练习室](labs/README.md)
+- 内容：任务分类、公开网页整理、工具选型、权限分级、10 行 Spec、提交前审查和传播短帖。
+- 标准：每个练习都有输入、步骤、产物和通过标准；不登录账号，不处理未脱敏材料。
 
 ### Skills 分享
 
@@ -61,6 +68,7 @@
 ## 已展开笔记
 
 - [从这里开始：AI Agent 新手导读](START_HERE.md)
+- [Agent 新手低风险练习室](labs/README.md)
 - [AI Agent 新手入门路线图：从会聊天到会让 Agent 做事](notes/agent-beginner-learning-path.md)
 - [AI Agent 新手术语表：从 Agent、Tool 到 Eval、Trace](notes/agent-glossary.md)
 - [AI Agent 新手概念 FAQ：Agent、Workflow、Skill、MCP、CLI、RPA 到底有什么区别](notes/agent-concepts-faq.md)
@@ -132,6 +140,8 @@
 ├── digests/
 │   ├── README.md
 │   └── 2026-06-12-aihot-agent-trends.md
+├── labs/
+│   └── README.md
 ├── skills/
 │   └── README.md
 ├── notes/

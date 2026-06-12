@@ -10,6 +10,8 @@
 
 本仓库不教“全自动赚钱”“一键替代人类”或越权操作账号。这里关注的是：让 Agent 在明确边界内完成真实任务，并留下可检查的结果。
 
+想直接做练习，可以打开：[Agent 新手低风险练习室](labs/README.md)。
+
 ## 30 秒判断：你现在该读哪篇
 
 | 你现在的状态 | 先读 | 读完要做什么 |
@@ -35,6 +37,7 @@
 
 推荐顺序：
 
+0. 打开 [Agent 新手低风险练习室](labs/README.md)，先选练习 1。
 1. 先读 [第一个 Agent 实战任务](notes/first-agent-web-research-task.md)。
 2. 复制里面的任务提示词。
 3. 选择一个不需要登录、没有隐私数据的公开网页。
@@ -131,6 +134,7 @@
 
 想直接找资源：
 
+- [低风险练习室](labs/README.md)
 - [学习笔记目录](notes/README.md)
 - [Skills 分享目录](skills/README.md)
 - [提示词模板目录](prompts/README.md)
