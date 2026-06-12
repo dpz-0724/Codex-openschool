@@ -21,6 +21,22 @@
 
 本期已经落地到仓库的动作：新增 [Agent 新手任务提示词包](../prompts/agent-beginner-task-prompts.md)，把“任务判断、工具选择、浏览边界、护栏、验收”做成可复制模板。
 
+## 2026-06-12 追加：AIHot 最新条目审核表
+
+这次只把有稳定公开入口、能讲清输入输出、对新手有实操价值的条目推进到主推清单。产品动态、只有社交线程或还没实测的工具先放观察。
+
+| AIHot 条目 | 稳定入口 | 审核结论 | 新手能学什么 | 已落地位置 |
+|---|---|---|---|---|
+| 小互开源公众号自动排版技能组合 | [xiaohu-wechat-format](https://github.com/xiaohuailabs/xiaohu-wechat-format) | 进入 Skills 主推 | 内容发布 skill 不能只讲“一键发布”，必须把排版预览、封面、草稿箱推送和人工确认拆开 | [Skills 专题导览](../skills/README.md) |
+| qiaomu-ai-prd | [joeseesun/qiaomu-ai-prd](https://github.com/joeseesun/qiaomu-ai-prd) | 已进入主推并沉淀成笔记 | PRD 要写给 Agent 执行和验收，不是只给人读 | [AI 可执行 PRD](../notes/agent-executable-prd.md) |
+| Spec 驱动开发三个 Skills | [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills) | 进入 Skills 主推 | 大任务先写 Product Spec / Tech Spec / Verify，减少 Agent 猜测空间 | [10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md) |
+| Text-To-Lottie | [diffusionstudio/lottie](https://github.com/diffusionstudio/lottie) | 进入 Skills 主推 | 好 skill 不只生成文件，还要有本地预览、定位帧和验收闭环 | [Skills 专题导览](../skills/README.md) |
+| baoyu-design 更新 | [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) | 进入 Skills 主推 | 设计类 skill 的关键是复用设计系统，同时保护 Figma 文件和品牌资产 | [Skills 专题导览](../skills/README.md) |
+| Cursor Auto-review | [Cursor Blog](https://cursor.com/blog/agent-autonomy-auto-review) | 已沉淀成常青笔记 | Agent 自主权限要按风险分层，而不是二选一 | [权限分级清单](../notes/agent-autonomy-permission-ladder.md) |
+| Replit Agent Skills | [Replit Blog](https://replit.com/blog/custom-skills) | 作为趋势来源，不单列 skill | Custom Instructions 是长期约定，Skills 是按任务加载的操作手册 | [Skill 触发边界](../notes/skill-description-trigger-boundaries.md) |
+| GitHub Copilot CLI 自定义 Agent | [GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli) | 观察，不进入 Skills 主推 | 终端里的“一次性提示”正在变成可复用 workflow，但需等更多实测边界 | 后续做 CLI workflow 专题 |
+| Codex 浏览器开发者模式 | [OpenAI Codex Chrome extension docs](https://developers.openai.com/codex/app/chrome-extension) | 观察，不进入 Skills 主推 | 浏览器调试能力应纳入自动化浏览路线，但产品能力不是单独 skill | 后续更新自动化浏览笔记 |
+
 更新补充：2026-06-12 再看 AIHot 的 Skills 相关条目，`qiaomu-ai-prd`、Spec 驱动 Skills、Replit Agent Skills、`baoyu-design`、Text-To-Lottie、Teach skill 共同指向同一个问题：skill 的价值不在于名字多，而在于触发边界、输入输出和验收方式清楚。这个方向已扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
 
 再次更新：`qiaomu-ai-prd` 已核到公开 GitHub 仓库，并扩展成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)。这篇教程不搬运原始长提示词，而是提炼新手真正需要的结构：速读卡、核心循环、约束层、状态表、数据结构和验收剧本。
@@ -184,7 +200,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 | Hermes Agent Desktop / Meoo CLI / WorkBuddy | 工具属性强，需要安装体验和边界验证 | 进入后续“工具实测”候选池 |
 | MiMo Code V0.1.0 | 亮点在记忆、会话检查点和终端 Agent，但目前只看到 AIHot 摘要和公众号入口 | 先核 GitHub、安装门槛、隐私边界，再决定是否做“国产终端 Agent 实测” |
 | Google DeepMind 多智能体安全研究资助 | 偏行业和研究资助，新手短期可操作性弱 | 观察是否出现可直接学习的多 Agent 安全案例 |
-| Text-To-Lottie | 方向很适合内容生产型 skill，但需要实测输出质量和本地预览闭环 | 核验公开仓库、安装命令和示例后，再考虑进入内容生产 skills |
+| GitHub Copilot CLI 自定义 Agent | 官方博客已发布，但本仓库还没有实测其 workflow 文件组织和权限边界 | 等做“终端 Agent 可重复工作流”专题时再展开 |
 | OpenRouter 与 Cursor 集成 | 更像模型接入配置指南，不是独立 skill | 只有在做“编码 Agent 模型路由”专题时再收录 |
 
 ## 本期给仓库的更新建议
@@ -205,7 +221,7 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 下一步优先级：
 
 1. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
-2. 继续观察 MiMo Code、Text-To-Lottie、公众号排版、设计系统等内容生产型或终端型 skills，只收录可核验、可复用、边界清楚的项目。
+2. 继续观察 MiMo Code、GitHub Copilot CLI 自定义 Agent、Codex 浏览器开发者模式等终端型或产品型能力，只在能写出操作步骤、边界和验收时进入主推。
 3. 实际发布传播素材后，记录平台链接和 Star 变化，保留能带来真实读者的表达。
 
 ## 参考来源

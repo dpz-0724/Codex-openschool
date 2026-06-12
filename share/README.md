@@ -352,7 +352,7 @@ https://github.com/dpz-0724/Codex-openschool
 - PPT Master 工作流
 - 个人知识库搭建笔记
 - 高价值提示词模板
-- 28 个审计后的 skills 导览
+- 32 个审计后的 skills 导览
 
 所有内容都按公开、脱敏、可复用的标准整理。
 
@@ -374,6 +374,7 @@ https://github.com/dpz-0724/Codex-openschool
 ## 下次可做的传播主题
 
 - AIHot Agent 新鲜拆解：从热点里提炼真正能落地的新手方法。
+- 本周值得看的 Agent skills：小互公众号排版、Spec workflow、Text-To-Lottie 和 baoyu-design。
 - MCP vs CLI：不要为了协议牺牲任务闭环。
 - Skill 描述怎么写才不误触发。
 - AI 可执行 PRD：让 Agent 少猜。

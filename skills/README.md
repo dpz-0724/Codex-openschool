@@ -10,9 +10,9 @@
 
 结论：
 
-- 公开主推：28 个。
+- 公开主推：32 个。
 - 其中本地已安装或本地整理：21 个。
-- 外部公开且适合当前仓库定位：7 个。
+- 外部公开且适合当前仓库定位：11 个。
 - 不公开或待脱敏：本地账号、聊天记录、订单统计、项目专用、运行时密钥/路径、平台发布运营类 workflow。
 
 ## 收录标准
@@ -46,6 +46,7 @@
 | Skill | 来源 | 解决什么问题 | 为什么值得分享 | 公开边界 |
 |---|---|---|---|---|
 | [`baoyu-markdown-to-html`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-markdown-to-html) | JimLiu / 宝玉 | Markdown 转适合发布的 HTML | 适合公众号、长文和教程排版 | 不复制第三方模板全文 |
+| [`xiaohu-wechat-format`](https://github.com/xiaohuailabs/xiaohu-wechat-format) | 小互 / xiaohuailabs；AIHot 发现；公开仓库已核 | Markdown / 文档到微信公众号兼容 HTML，可选封面和草稿箱推送 | 适合内容创作者把学习笔记快速变成可预览的公众号排版 | 推送草稿箱、图片上传、公众号后台都属于高风险动作，公开分享时只推荐排版和预览流程 |
 | [`baoyu-cover-image`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-cover-image) | JimLiu / 宝玉 | 文章、课程、教程封面方案 | 解决“好内容缺封面”的传播问题 | 商标、肖像、图中文字要人工复核 |
 | [`baoyu-xhs-images`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-xhs-images) | JimLiu / 宝玉 | 小红书图文卡片和多图方案 | 适合把学习笔记转成可传播图片 | 不放真实账号数据或后台截图 |
 | [`baoyu-slide-deck`](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-slide-deck) | JimLiu / 宝玉 | 分享型 slides / deck 视觉方案 | 适合轻量知识分享和视觉提案 | 需要确认模板授权，不搬运原始素材 |
@@ -77,12 +78,14 @@
 | `video-spec-builder` | 本地整理 | 把模糊视频想法追问成 `video-spec.md` 和分镜表 | 适合 AI 视频、产品演示、教学短片从 0 到可执行规格 | 不公开未发布脚本、账号节奏和素材路径 |
 | `tech-explainer-script-director` | 本地整理 | 中文技术讲解脚本：痛点、钩子、证据、可视化 | 解决技术内容像说明书、不像视频的问题 | 技术事实要有来源，不夸大产品能力 |
 | `motion-rich-tech-video-director` | 本地整理 | 把脚本拆成持续变化的画面和镜头节奏 | 适合避免 PPT 式静态视频，让观点对应视觉变化 | 不承诺工具做不到的镜头；最终要做画面验收 |
+| [`text-to-lottie`](https://github.com/diffusionstudio/lottie) | diffusionstudio；AIHot 发现；公开仓库已核 | 让 Agent 生成 Lottie / Bodymovin JSON，并用本地 Skottie harness 预览验收 | 价值不只是“生成动画”，而是把动效产物和浏览器验收闭环绑在一起 | 适合短时长矢量动效；不适合多镜头剪辑、复杂角色绑定、粒子或 3D |
 
 ## 专题七：UI / 前端质量、上线与部署验证
 
 | Skill | 来源 | 解决什么问题 | 为什么值得分享 | 公开边界 |
 |---|---|---|---|---|
 | `ui-ux-pro-max` | 本地整理；来源未见明确作者字段 | UI/UX 设计系统、配色、字体、交互、无障碍和质量检查 | 本地使用痕迹较多，适合做前端体验审计和设计决策 | 公开时只分享规则和方法，不复制内部数据表全集 |
+| [`baoyu-design`](https://github.com/JimLiu/baoyu-design) | JimLiu / 宝玉；AIHot 发现；公开仓库已核 | 本地设计 skill，可产出 UI mockup、prototype、wireframe、deck，并支持导入 Figma 设计系统 | 适合把“设计系统 + Agent 实现”做成可复用本地工作流 | Figma 文件、品牌资产、客户设计稿必须先确认授权和脱敏 |
 | `html-skill-benchmark` | 本地整理 | 对多个 HTML / 前端 / UI skills 做同题评测 | 适合判断哪个 skill 真能做出好页面，而不是只看描述 | 不公开参赛者私有输出或未授权素材 |
 | `public-site-deploy-health` | 本地整理 | 网站部署、线上线下一致性、公开路由健康检查 | 解决“到底上线了吗、线上是不是最新”的真实问题 | 不公开服务器 IP、路径、密钥、项目根目录 |
 | `vercel-deploy` | 本地整理；平台为 Vercel | 快速部署预览站点并拿到链接 | 适合教程、Demo、临时预览交付 | 默认 preview；生产发布必须明确确认 |
@@ -91,6 +94,7 @@
 
 | Skill | 来源 | 解决什么问题 | 为什么值得分享 | 公开边界 |
 |---|---|---|---|---|
+| [`warpdotdev/common-skills`](https://github.com/warpdotdev/common-skills) | Warp；AIHot 发现；公开仓库已核 | 用 `write-product-spec`、`write-tech-spec`、`validate-changes-match-specs` 支撑 Spec -> Implement -> Verify 闭环 | 适合新手理解为什么 Agent 编程要先写行为、不变量和验收，再进入实现 | 不是所有小改动都需要完整 SDD；跨模块、大范围或高歧义任务才值得启用 |
 | [`qiaomu-ai-prd`](https://github.com/joeseesun/qiaomu-ai-prd) | 向阳乔木 / joeseesun；AIHot 发现；公开仓库已核 | 把一句话产品想法整理成 AI 编程助手能执行的 PRD | 适合新手学习“速读卡、约束层、优先级、状态、数据结构、验收剧本”这些 Agent 交接要素 | 推荐公开仓库和方法，不复制原始长提示词；涉及真实业务、账号、支付、用户数据时必须人工审核 |
 
 ## 候选但暂不公开主推
