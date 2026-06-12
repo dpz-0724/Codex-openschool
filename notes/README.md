@@ -22,10 +22,11 @@
 | 5 | [Agent 自动化浏览与软件操作技术路线](agent-automation-browser.md) | 想理解浏览器自动化、Computer Use、RPA 和 Agent 工具边界的人 | 有清晰技术分层，能帮助判断“该用 API、浏览器还是桌面控制” | 通过 |
 | 6 | [Agent 工具调用选型：什么时候用 MCP，什么时候用 CLI](agent-tooling-mcp-vs-cli.md) | 已经知道 Agent 可以用工具、但不确定该接 MCP、CLI、API 还是浏览器自动化的新手 | 用本地决策经验和官方 MCP 文档整理出工具层选型表、判断流程和安全边界 | 通过 |
 | 7 | [Agent 自主权限分级清单：什么时候放手，什么时候必须停下来](agent-autonomy-permission-ladder.md) | 已经开始让 Agent 调工具、改文件、浏览网页、发布草稿的新手 | 把 AIHot 发现的 Auto-review 思路转成 L0-L4 权限分级、工具前检查表和可复制提示词 | 通过 |
-| 8 | [Enterprise Agent Harness 学习笔记](enterprise-agent-harness.md) | 想把 Agent 从 demo 做成可测试、可审计系统的人 | 有完整工程化框架，覆盖 golden case、trace、replay、guardrail、audit | 通过 |
-| 9 | [企业 Agent 数据治理与自助分析落地手册](enterprise-agent-data-governance.md) | 做企业数据 Agent、BI Agent、自助分析的人 | 解释业务定义、语义层、canonical model、SOP 和验收题库如何组合 | 通过 |
-| 10 | [Codex + PPT Master：从资料到高质量 PPT 的工作流](codex-ppt-master-workflow.md) | 想用 Codex 做课程、汇报、长文档转 PPT 的人 | 给出稳定流程和验收点，不只是“让 AI 做 PPT” | 通过 |
-| 11 | [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](personal-knowledge-base-agent-wiki.md) | 想用 Obsidian、Markdown、Codex 或 Agent 搭建长期知识库的人 | 从本地 notebook 的成熟方法中提炼出分层架构、入库门禁、查询回写和 lint 流程 | 通过 |
+| 8 | [Skill 描述怎么写才不误触发：description 是触发器，不是宣传语](skill-description-trigger-boundaries.md) | 想安装、创建或审核 Agent skills，但不确定怎么写触发边界的新手 | 把 AIHot 近期 Skills 动态和 Replit 官方资料拆成 description 写法、误触发诊断和发布前审计表 | 通过 |
+| 9 | [Enterprise Agent Harness 学习笔记](enterprise-agent-harness.md) | 想把 Agent 从 demo 做成可测试、可审计系统的人 | 有完整工程化框架，覆盖 golden case、trace、replay、guardrail、audit | 通过 |
+| 10 | [企业 Agent 数据治理与自助分析落地手册](enterprise-agent-data-governance.md) | 做企业数据 Agent、BI Agent、自助分析的人 | 解释业务定义、语义层、canonical model、SOP 和验收题库如何组合 | 通过 |
+| 11 | [Codex + PPT Master：从资料到高质量 PPT 的工作流](codex-ppt-master-workflow.md) | 想用 Codex 做课程、汇报、长文档转 PPT 的人 | 给出稳定流程和验收点，不只是“让 AI 做 PPT” | 通过 |
+| 12 | [个人知识库搭建：让 Agent 维护一个会生长的 Wiki](personal-knowledge-base-agent-wiki.md) | 想用 Obsidian、Markdown、Codex 或 Agent 搭建长期知识库的人 | 从本地 notebook 的成熟方法中提炼出分层架构、入库门禁、查询回写和 lint 流程 | 通过 |
 
 ## 已下架内容
 
