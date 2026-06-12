@@ -116,7 +116,7 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 ## 0-50 Stars 的重点任务
 
 - 首页继续压缩，让读者 30 秒内知道仓库价值。
-- 已补齐 14 篇高质量入门笔记；新增内容必须先判断是否能解决一个具体问题，避免为了数量扩张。
+- 已补齐 15 篇高质量入门笔记；新增内容必须先判断是否能解决一个具体问题，避免为了数量扩张。
 - 已新增“第一个 Agent 任务”实战案例：[整理一篇公开网页并写成 Markdown 笔记](notes/first-agent-web-research-task.md)。
 - 为每篇笔记补一段“适合谁 / 读完能做什么”。
 - 已建立基础 FAQ：[AI Agent 新手概念 FAQ](notes/agent-concepts-faq.md)。
@@ -128,6 +128,7 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 - 已把 AIHot 里的 Spec 驱动开发趋势沉淀成常青教程：[Agent 编程前的 10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)。
 - 已把 AIHot 里的 `qiaomu-ai-prd` 拆成常青教程：[AI 可执行 PRD](notes/agent-executable-prd.md)。
 - 已把 AIHot 里的 EurekAgent 环境工程视角补进：[Enterprise Agent Harness 学习笔记](notes/enterprise-agent-harness.md)。
+- 已把 EurekAgent / Ona 相关的长任务环境工程视角拆成可复制模板：[Agent 长任务环境规格模板](notes/agent-long-task-environment-spec.md)。
 
 ## 50-150 Stars 的重点任务
 

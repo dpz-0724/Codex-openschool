@@ -221,6 +221,8 @@ Environment Engineering =
 
 > 长任务 Agent 不要先问“模型够不够聪明”，先问“环境有没有把正确行为变容易，把危险行为变困难”。
 
+如果只是想复制一张更完整的任务前检查表，可以直接读：[Agent 长任务环境规格模板](agent-long-task-environment-spec.md)。
+
 ## 十大模块
 
 ### 1. Runtime Control：运行控制
@@ -556,6 +558,6 @@ Enterprise Agent Harness 的本质不是某个框架，也不是某个模型 API
 
 ## 参考来源
 
-- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec 与环境工程](../digests/2026-06-12-aihot-agent-trends.md)
+- [AIHot Agent 新鲜内容拆解：Auto-review、Skills、Spec、PRD 与环境工程](../digests/2026-06-12-aihot-agent-trends.md)
 - [EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery](https://arxiv.org/abs/2606.13662)
 - [Hugging Face Papers: EurekAgent](https://huggingface.co/papers/2606.13662)

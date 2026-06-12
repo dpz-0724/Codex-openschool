@@ -194,12 +194,13 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 已把 Spec 驱动开发方向扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
 - 已把 `qiaomu-ai-prd` 拆成常青教程：[AI 可执行 PRD](../notes/agent-executable-prd.md)，并加入 Skills 导览。
 - 已把 EurekAgent 的环境工程视角补进常青教程：[Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)。
+- 已把“长任务环境规格”单独扩展成可复制模板：[Agent 长任务环境规格模板](../notes/agent-long-task-environment-spec.md)。
 
 下一步优先级：
 
 1. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
-2. 从本地和公开资料里补一篇“Agent 长任务环境规格模板”，把权限、产物、预算、人在回路做成可复制清单。
-3. 继续观察公众号排版、Lottie、设计系统等内容生产型 skills，只收录可核验、可复用、边界清楚的项目。
+2. 继续观察公众号排版、Lottie、设计系统等内容生产型 skills，只收录可核验、可复用、边界清楚的项目。
+3. 给最适合传播的 3 篇新手笔记补社交平台摘要和标题备选，方便把仓库带到第一批真实读者面前。
 
 ## 参考来源
 
@@ -210,3 +211,4 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - [GitHub Spec Kit](https://github.com/github/spec-kit)
 - [qiaomu-ai-prd](https://github.com/joeseesun/qiaomu-ai-prd)
 - [Hugging Face Papers: EurekAgent](https://huggingface.co/papers/2606.13662)
+- [OpenAI to acquire Ona](https://openai.com/index/openai-to-acquire-ona/)
