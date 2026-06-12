@@ -113,7 +113,7 @@ Verify：实现是否真的匹配前两份 spec。
 
 ### 可落地内容
 
-- 后续可以把这条扩成“Agent 编程前的 10 行 Spec 模板”。
+- 已扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
 - 当前提示词包的 Day 1 和 Day 7 已经采用同样思路：先定义完成标准，再执行。
 
 ## 4. EurekAgent：长任务 Agent 的关键是环境工程
@@ -160,12 +160,13 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - 新增 `digests/` 栏目，把 AIHot 新内容拆解和常青学习笔记分开。
 - 已把 Cursor Auto-review 方向扩展成常青教程：[Agent 自主权限分级清单](../notes/agent-autonomy-permission-ladder.md)。
 - 已把 Replit Skills / AIHot Skills 趋势扩展成常青教程：[Skill 描述怎么写才不误触发](../notes/skill-description-trigger-boundaries.md)。
+- 已把 Spec 驱动开发方向扩展成常青教程：[Agent 编程前的 10 行 Spec 模板](../notes/agent-coding-10-line-spec-template.md)。
 
 下一步优先级：
 
-1. 写一篇 `Agent 编程前的 10 行 Spec 模板`，吸收 Spec 驱动开发思路。
-2. 扩展 [Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)，加入环境工程视角。
-3. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
+1. 扩展 [Enterprise Agent Harness 学习笔记](../notes/enterprise-agent-harness.md)，加入环境工程视角。
+2. 工具实测候选池：Hermes Agent Desktop、Meoo CLI、WorkBuddy，确认安装门槛、隐私边界和可替代性后再决定是否进入主推。
+3. 继续观察 `qiaomu-ai-prd` 一类 AI PRD skills，把可复用部分拆成“AI 可执行 PRD”专题，不直接搬运模板全文。
 
 ## 参考来源
 
@@ -173,4 +174,6 @@ EurekAgent 的启发不在于新手马上去做科研 Agent，而在于它把“
 - [Cursor Blog: Governing agent autonomy with Auto-review](https://cursor.com/blog/agent-autonomy-auto-review)
 - [Replit Blog: Customize Replit Agent with Skills & Custom Instructions](https://replit.com/blog/custom-skills)
 - [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills)
+- [GitHub Spec Kit](https://github.com/github/spec-kit)
+- [qiaomu-ai-prd](https://github.com/joeseesun/qiaomu-ai-prd)
 - [Hugging Face Papers: EurekAgent](https://huggingface.co/papers/2606.13662)

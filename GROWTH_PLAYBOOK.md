@@ -116,7 +116,7 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 ## 0-50 Stars 的重点任务
 
 - 首页继续压缩，让读者 30 秒内知道仓库价值。
-- 已补齐 12 篇高质量入门笔记；新增内容必须先判断是否能解决一个具体问题，避免为了数量扩张。
+- 已补齐 13 篇高质量入门笔记；新增内容必须先判断是否能解决一个具体问题，避免为了数量扩张。
 - 已新增“第一个 Agent 任务”实战案例：[整理一篇公开网页并写成 Markdown 笔记](notes/first-agent-web-research-task.md)。
 - 为每篇笔记补一段“适合谁 / 读完能做什么”。
 - 已建立基础 FAQ：[AI Agent 新手概念 FAQ](notes/agent-concepts-faq.md)。
@@ -125,6 +125,7 @@ ai-agent, agentic-ai, codex, skills, prompt-engineering, automation, mcp, knowle
 - 已新增 AIHot 新鲜拆解栏目：[AIHot Agent 新鲜内容拆解](digests/2026-06-12-aihot-agent-trends.md)。
 - 已把 AIHot 里的 Cursor Auto-review 方向沉淀成常青教程：[Agent 自主权限分级清单](notes/agent-autonomy-permission-ladder.md)。
 - 已把 AIHot 里的 Skills 趋势沉淀成常青教程：[Skill 描述怎么写才不误触发](notes/skill-description-trigger-boundaries.md)。
+- 已把 AIHot 里的 Spec 驱动开发趋势沉淀成常青教程：[Agent 编程前的 10 行 Spec 模板](notes/agent-coding-10-line-spec-template.md)。
 
 ## 50-150 Stars 的重点任务
 
